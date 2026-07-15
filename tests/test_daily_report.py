@@ -13,6 +13,10 @@ TEST_TMP = ROOT / ".test_tmp"
 TEST_TMP.mkdir(exist_ok=True)
 
 from crypto_intel.cli import main
+from crypto_intel.config import AppConfig
+from crypto_intel.providers.market.static import StaticMarketProvider
+from crypto_intel.providers.news.static import StaticNewsProvider
+from crypto_intel.services.report import ReportService
 
 
 class DailyReportTests(unittest.TestCase):
@@ -67,6 +71,25 @@ delivery:
             self.assertTrue((root / "artifacts" / "Crypto_Market_Intelligence_2026-07-15.json").exists())
             self.assertTrue((root / "artifacts" / "Crypto_Market_Intelligence_2026-07-15.pdf").exists())
             self.assertTrue((root / "data" / "test.db").exists())
+
+    def test_beginner_report_uses_chinese_guidance_and_preserves_original_title(self) -> None:
+        with tempfile.TemporaryDirectory(dir=TEST_TMP) as tmp:
+            root = Path(tmp)
+            event = StaticNewsProvider().fetch_events()[0]
+            config = AppConfig(report_output_dir=root / "artifacts")
+            payload, metadata = ReportService(config).compose(
+                "2026-07-15",
+                StaticMarketProvider().fetch_market_bundle(),
+                [event],
+                deep_analysis=False,
+                dry_run=True,
+                warnings=["測試用資料品質提醒。"],
+            )
+            html = Path(metadata.html_path).read_text(encoding="utf-8")
+            self.assertIn("先看這裡：今天的三個重點", html)
+            self.assertIn("中文導讀", html)
+            self.assertIn(event.title, html)
+            self.assertEqual(payload["data_quality"]["source_diversity"]["independent_sources"], 1)
 
 
 if __name__ == "__main__":

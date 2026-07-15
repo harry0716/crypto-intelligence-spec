@@ -8,7 +8,7 @@ from crypto_intel.domain.models import MarketBundle, NewsEvent, ProviderHealth
 from crypto_intel.providers.base import MarketProvider, NewsProvider
 from crypto_intel.providers.market.static import StaticMarketProvider
 from crypto_intel.services.deduplication import deduplicate_events
-from crypto_intel.services.ranking import rank_events
+from crypto_intel.services.ranking import rank_events, select_diverse_events
 
 LOGGER = logging.getLogger(__name__)
 
@@ -49,7 +49,12 @@ class CollectionService:
             return fallback, health
         return bundle, health
 
-    def collect_events(self, limit: int) -> tuple[list[NewsEvent], list[ProviderHealth]]:
+    def collect_events(
+        self,
+        limit: int,
+        max_event_age_hours: int | None = None,
+        max_per_source: int | None = None,
+    ) -> tuple[list[NewsEvent], list[ProviderHealth]]:
         events: list[NewsEvent] = []
         health: list[ProviderHealth] = []
         for provider in self.news_providers:
@@ -64,5 +69,19 @@ class CollectionService:
                 error = str(exc)
             health.append(ProviderHealth(provider.name, status, checked_at, error=error))
         unique = deduplicate_events(events)
-        return rank_events(unique, limit), health
+        recent = _recent_events(unique, max_event_age_hours)
+        ranked = rank_events(recent, len(recent))
+        if max_per_source is not None:
+            return select_diverse_events(ranked, limit, max_per_source), health
+        return ranked[:limit], health
 
+
+def _recent_events(events: list[NewsEvent], max_age_hours: int | None) -> list[NewsEvent]:
+    if max_age_hours is None:
+        return events
+    now = datetime.now(timezone.utc)
+    return [
+        event
+        for event in events
+        if 0 <= (now - event.event_time.astimezone(timezone.utc)).total_seconds() <= max_age_hours * 3600
+    ]

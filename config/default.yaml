@@ -5,6 +5,10 @@ app:
 report:
   top_event_count: 10
   deep_analysis_interval_days: 3
+  reader_level: beginner
+  max_event_age_hours: 72
+  max_events_per_source: 2
+  minimum_independent_sources: 3
   output_formats:
     - html
     - pdf

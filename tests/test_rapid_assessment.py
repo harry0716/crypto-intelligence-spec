@@ -28,7 +28,7 @@ class FakeCollectionService:
     def collect_market(self):
         return StaticMarketProvider().fetch_market_bundle(), []
 
-    def collect_events(self, limit: int):
+    def collect_events(self, limit: int, **kwargs: object):
         return StaticNewsProvider().fetch_events()[:limit], []
 
 

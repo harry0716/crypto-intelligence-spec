@@ -3,6 +3,7 @@ from __future__ import annotations
 import sys
 import tempfile
 import unittest
+from dataclasses import replace
 from datetime import date
 from pathlib import Path
 
@@ -13,6 +14,7 @@ TEST_TMP.mkdir(exist_ok=True)
 
 from crypto_intel.config import load_config
 from crypto_intel.providers.news.static import StaticNewsProvider
+from crypto_intel.services.ranking import select_diverse_events
 from crypto_intel.services.analytics import exchange_spread_pct, return_pct, usdt_depeg
 from crypto_intel.services.deduplication import deduplicate_events
 from crypto_intel.services.deep_analysis import should_run_deep_analysis
@@ -38,6 +40,17 @@ class CoreServiceTests(unittest.TestCase):
         ranked = rank_events(unique, 5)
         self.assertEqual(len(ranked), 5)
         self.assertGreaterEqual(ranked[0].importance, ranked[-1].importance)
+
+    def test_source_diversity_cap_prevents_one_domain_from_filling_report(self) -> None:
+        events = StaticNewsProvider().fetch_events()
+        diversified = []
+        for index, event in enumerate(events):
+            source = "https://one.example/news" if index < 6 else f"https://source-{index}.example/news"
+            diversified.append(replace(event, source_url=source, source_name=source))
+        selected = select_diverse_events(diversified, limit=6, max_per_source=2)
+        one_source_count = sum("one.example" in event.source_url for event in selected)
+        self.assertEqual(len(selected), 6)
+        self.assertLessEqual(one_source_count, 2)
 
     def test_three_day_trigger(self) -> None:
         self.assertFalse(should_run_deep_analysis(date(2026, 7, 15), None))

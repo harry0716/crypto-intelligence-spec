@@ -9,13 +9,13 @@ from crypto_intel.domain.models import MarketBundle, NewsEvent
 def market_warnings(bundle: MarketBundle) -> list[str]:
     warnings = list(bundle.warnings)
     if bundle.btc_usd is None:
-        warnings.append("Missing BTC/USD.")
+        warnings.append("缺少 BTC/USD 市場資料。")
     elif bundle.btc_usd.price <= 0:
-        warnings.append("Invalid BTC/USD price.")
+        warnings.append("BTC/USD 價格無效。")
     if bundle.usdt_usd is None:
-        warnings.append("Missing USDT/USD.")
+        warnings.append("缺少 USDT/USD 市場資料。")
     elif abs(bundle.usdt_usd.price - 1.0) > 0.05:
-        warnings.append("Critical USDT depeg greater than 5%.")
+        warnings.append("USDT 偏離 1 美元超過 5%，屬重大風險訊號。")
     return warnings
 
 
@@ -25,3 +25,15 @@ def single_domain_ratio(events: list[NewsEvent]) -> float:
     domains = [urlparse(event.source_url).netloc or event.source_name for event in events]
     return Counter(domains).most_common(1)[0][1] / len(events)
 
+
+def source_diversity(events: list[NewsEvent]) -> dict[str, int | float | str | None]:
+    if not events:
+        return {"independent_sources": 0, "largest_source": None, "largest_source_share": 0.0}
+    domains = [urlparse(event.source_url).netloc or event.source_name for event in events]
+    counts = Counter(domains)
+    largest_source, largest_count = counts.most_common(1)[0]
+    return {
+        "independent_sources": len(counts),
+        "largest_source": largest_source,
+        "largest_source_share": round(largest_count / len(events), 4),
+    }

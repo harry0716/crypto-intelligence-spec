@@ -59,6 +59,5 @@ class StaticMarketProvider:
             btc_dominance=52.4,
             usdt_depeg=abs(usdt_usd.price - 1.0),
             provider_status=ProviderStatus.DEGRADED,
-            warnings=["Using static market fixture because live provider was unavailable."],
+            warnings=["即時市場來源無法使用，已改用測試用市場資料。"],
         )
-

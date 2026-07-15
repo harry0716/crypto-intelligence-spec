@@ -13,7 +13,10 @@ from crypto_intel.domain.models import NewsEvent
 
 DEFAULT_FEEDS = [
     "https://www.sec.gov/news/pressreleases.rss",
+    "https://www.cftc.gov/RSS/RSSGP/rssgp.xml",
     "https://blog.chain.link/rss/",
+    "https://www.coindesk.com/arc/outboundfeeds/rss/",
+    "https://cointelegraph.com/rss",
 ]
 
 
@@ -88,12 +91,12 @@ def _assets_for(text: str) -> list[str]:
         assets.append("BTC")
     if "tether" in lowered or "usdt" in lowered or "stablecoin" in lowered:
         assets.append("USDT")
-    return assets or ["BTC", "USDT"]
+    return assets
 
 
 def _topic_for(text: str) -> str:
     lowered = text.lower()
-    if "sec" in lowered or "regulat" in lowered:
+    if "sec" in lowered or "cftc" in lowered or "regulat" in lowered:
         return "Regulation"
     if "stablecoin" in lowered or "usdt" in lowered:
         return "Stablecoin"
@@ -102,4 +105,3 @@ def _topic_for(text: str) -> str:
     if "etf" in lowered:
         return "ETF"
     return "Market"
-

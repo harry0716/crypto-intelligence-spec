@@ -8,6 +8,9 @@
   "timezone": "Asia/Taipei",
   "generated_at": "2026-07-15T08:00:00+08:00",
   "market": {},
+  "beginner_brief": {},
+  "market_reading": {},
+  "learning_corner": [],
   "top_events": [],
   "regulatory_events": [],
   "social_hotspots": [],
@@ -20,6 +23,8 @@
   "disclaimer": ""
 }
 ```
+
+`data_quality.source_diversity` 必須包含 `independent_sources`、`largest_source` 與 `largest_source_share`。`beginner_brief` 提供繁體中文的今日重點，事件本身仍保留原文 `title`、`source_name` 與 `source_url`。
 
 `top_events[]`：
 

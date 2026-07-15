@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import replace
+from urllib.parse import urlparse
 
 from crypto_intel.domain.enums import EventClassification
 from crypto_intel.domain.models import NewsEvent
@@ -26,6 +27,21 @@ def rank_events(events: list[NewsEvent], limit: int = 10) -> list[NewsEvent]:
     return sorted(scored, key=lambda item: (item.importance, item.confidence, item.quality_score), reverse=True)[:limit]
 
 
+def select_diverse_events(events: list[NewsEvent], limit: int, max_per_source: int) -> list[NewsEvent]:
+    """Keep the ranking order while preventing one publisher from filling the report."""
+    selected: list[NewsEvent] = []
+    source_counts: dict[str, int] = {}
+    for event in rank_events(events, len(events)):
+        source = _source_key(event)
+        if source_counts.get(source, 0) >= max_per_source:
+            continue
+        selected.append(event)
+        source_counts[source] = source_counts.get(source, 0) + 1
+        if len(selected) == limit:
+            break
+    return selected
+
+
 def _score(event: NewsEvent) -> float:
     source_credibility = event.quality_score / 100
     market_relevance = 0.9 if {"BTC", "USDT"} & set(event.affected_assets) else 0.4
@@ -44,3 +60,6 @@ def _score(event: NewsEvent) -> float:
     )
     return round(score * classification_penalty, 4)
 
+
+def _source_key(event: NewsEvent) -> str:
+    return urlparse(event.source_url).netloc or event.source_name

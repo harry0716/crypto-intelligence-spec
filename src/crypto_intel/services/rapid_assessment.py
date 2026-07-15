@@ -16,7 +16,6 @@ from crypto_intel.infrastructure.time import resolve_timezone
 from crypto_intel.providers.market.coingecko import CoinGeckoMarketProvider
 from crypto_intel.providers.market.static import StaticMarketProvider
 from crypto_intel.providers.news.rss import RssNewsProvider
-from crypto_intel.providers.news.static import StaticNewsProvider
 from crypto_intel.repositories.event_repository import EventRepository
 from crypto_intel.repositories.market_repository import MarketRepository
 from crypto_intel.repositories.rapid_assessment_repository import RapidAssessmentRepository
@@ -75,10 +74,14 @@ class RapidAssessmentService:
         collector = CollectionService(
             market_provider=CoinGeckoMarketProvider(),
             fallback_market_provider=StaticMarketProvider(),
-            news_providers=[RssNewsProvider(), StaticNewsProvider()],
+            news_providers=[RssNewsProvider()],
         )
         market, market_health = collector.collect_market()
-        events, news_health = collector.collect_events(self.config.top_event_count)
+        events, news_health = collector.collect_events(
+            self.config.top_event_count,
+            max_event_age_hours=self.config.max_event_age_hours,
+            max_per_source=self.config.max_events_per_source,
+        )
         warnings = market_warnings(market)
         if len(events) < self.config.minimum_event_count:
             warnings.append("即時事件數量低於最低門檻，需避免過度解讀。")

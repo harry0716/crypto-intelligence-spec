@@ -10,7 +10,6 @@ from crypto_intel.infrastructure.time import resolve_timezone
 from crypto_intel.providers.market.coingecko import CoinGeckoMarketProvider
 from crypto_intel.providers.market.static import StaticMarketProvider
 from crypto_intel.providers.news.rss import RssNewsProvider
-from crypto_intel.providers.news.static import StaticNewsProvider
 from crypto_intel.repositories.event_repository import EventRepository
 from crypto_intel.repositories.market_repository import MarketRepository
 from crypto_intel.repositories.report_repository import ReportRepository
@@ -18,7 +17,7 @@ from crypto_intel.services.analytics import snapshots_from_bundle
 from crypto_intel.services.collection import CollectionService
 from crypto_intel.services.deep_analysis import should_run_deep_analysis
 from crypto_intel.services.delivery import DeliveryService
-from crypto_intel.services.quality import market_warnings, single_domain_ratio
+from crypto_intel.services.quality import market_warnings, single_domain_ratio, source_diversity
 from crypto_intel.services.report import ReportService
 from crypto_intel.web import run_server
 
@@ -64,15 +63,24 @@ def run_daily_report(args: argparse.Namespace) -> int:
         collector = CollectionService(
             market_provider=CoinGeckoMarketProvider(),
             fallback_market_provider=StaticMarketProvider(),
-            news_providers=[RssNewsProvider(), StaticNewsProvider()],
+            news_providers=[RssNewsProvider()],
         )
         market, market_health = collector.collect_market()
-        events, news_health = collector.collect_events(config.top_event_count)
+        events, news_health = collector.collect_events(
+            config.top_event_count,
+            max_event_age_hours=config.max_event_age_hours,
+            max_per_source=config.max_events_per_source,
+        )
         warnings = market_warnings(market)
         if len(events) < config.minimum_event_count:
             warnings.append("Top 10 可用事件少於最低門檻。")
         if single_domain_ratio(events) > config.max_single_domain_ratio:
             warnings.append("新聞來源集中度過高，需留意單一來源偏誤。")
+        diversity = source_diversity(events)
+        if diversity["independent_sources"] < config.minimum_independent_sources:
+            warnings.append(
+                f"可用情報僅涵蓋 {diversity['independent_sources']} 個獨立來源，今日事件解讀需保守。"
+            )
 
         report_repo.save_provider_health(market_health + news_health)
         market_repo.save_many(snapshots_from_bundle(market))
