@@ -23,6 +23,7 @@ class CollectionService:
         self.market_provider = market_provider
         self.fallback_market_provider = fallback_market_provider or StaticMarketProvider()
         self.news_providers = news_providers
+        self.latest_recent_events: list[NewsEvent] = []
 
     def collect_market(self) -> tuple[MarketBundle, list[ProviderHealth]]:
         started = datetime.now(timezone.utc)
@@ -70,6 +71,7 @@ class CollectionService:
             health.append(ProviderHealth(provider.name, status, checked_at, error=error))
         unique = deduplicate_events(events)
         recent = _recent_events(unique, max_event_age_hours)
+        self.latest_recent_events = recent
         ranked = rank_events(recent, len(recent))
         if max_per_source is not None:
             return select_diverse_events(ranked, limit, max_per_source), health

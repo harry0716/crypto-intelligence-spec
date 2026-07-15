@@ -5,6 +5,7 @@ from urllib.parse import urlparse
 
 from crypto_intel.domain.enums import EventClassification
 from crypto_intel.domain.models import NewsEvent
+from crypto_intel.services.source_governance import event_governance
 
 
 TOPIC_WEIGHTS = {
@@ -50,6 +51,8 @@ def _score(event: NewsEvent) -> float:
     novelty = TOPIC_WEIGHTS.get(event.topic, 0.5)
     social_velocity = 0.3
     classification_penalty = 0.85 if event.classification == EventClassification.RUMOR else 1.0
+    governance = event_governance(event)
+    confirmation_penalty = 0.78 if governance["requires_confirmation"] else 1.0
     score = (
         source_credibility * 0.25
         + market_relevance * 0.25
@@ -58,7 +61,7 @@ def _score(event: NewsEvent) -> float:
         + novelty * 0.10
         + social_velocity * 0.10
     )
-    return round(score * classification_penalty, 4)
+    return round(score * classification_penalty * confirmation_penalty, 4)
 
 
 def _source_key(event: NewsEvent) -> str:

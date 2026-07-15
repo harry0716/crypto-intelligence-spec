@@ -74,7 +74,7 @@ class RapidAssessmentService:
         collector = CollectionService(
             market_provider=CoinGeckoMarketProvider(),
             fallback_market_provider=StaticMarketProvider(),
-            news_providers=[RssNewsProvider()],
+            news_providers=[RssNewsProvider(source_registry=self.config.raw.get("source_registry", {}))],
         )
         market, market_health = collector.collect_market()
         events, news_health = collector.collect_events(

@@ -27,6 +27,14 @@ quality:
   minimum_provider_success_rate: 0.70
   max_single_domain_ratio: 0.50
 
+# Source policy is versioned with the application. Values here override the
+# reviewed defaults in source_governance.py without changing collection code.
+source_registry:
+  www.coindesk.com:
+    requires_confirmation: true
+  cointelegraph.com:
+    requires_confirmation: true
+
 delivery:
   email_enabled: false
   upload_github_artifact: true

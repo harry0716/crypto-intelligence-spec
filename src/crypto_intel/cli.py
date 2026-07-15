@@ -63,7 +63,7 @@ def run_daily_report(args: argparse.Namespace) -> int:
         collector = CollectionService(
             market_provider=CoinGeckoMarketProvider(),
             fallback_market_provider=StaticMarketProvider(),
-            news_providers=[RssNewsProvider()],
+            news_providers=[RssNewsProvider(source_registry=config.raw.get("source_registry", {}))],
         )
         market, market_health = collector.collect_market()
         events, news_health = collector.collect_events(
@@ -92,7 +92,15 @@ def run_daily_report(args: argparse.Namespace) -> int:
             last_deep,
             config.deep_analysis_interval_days,
         )
-        _, metadata = ReportService(config).compose(today, market, events, deep_analysis, dry_run, warnings)
+        _, metadata = ReportService(config).compose(
+            today,
+            market,
+            events,
+            deep_analysis,
+            dry_run,
+            warnings,
+            source_events=collector.latest_recent_events,
+        )
         report_repo.save_report(metadata)
         DeliveryService(config, report_repo).deliver(metadata, no_email=args.no_email)
     finally:

@@ -4,6 +4,7 @@ from collections import Counter
 from urllib.parse import urlparse
 
 from crypto_intel.domain.models import MarketBundle, NewsEvent
+from crypto_intel.services.source_governance import event_governance
 
 
 def market_warnings(bundle: MarketBundle) -> list[str]:
@@ -28,7 +29,13 @@ def single_domain_ratio(events: list[NewsEvent]) -> float:
 
 def source_diversity(events: list[NewsEvent]) -> dict[str, int | float | str | None]:
     if not events:
-        return {"independent_sources": 0, "largest_source": None, "largest_source_share": 0.0}
+        return {
+            "independent_sources": 0,
+            "largest_source": None,
+            "largest_source_share": 0.0,
+            "primary_source_events": 0,
+            "requires_confirmation_events": 0,
+        }
     domains = [urlparse(event.source_url).netloc or event.source_name for event in events]
     counts = Counter(domains)
     largest_source, largest_count = counts.most_common(1)[0]
@@ -36,4 +43,10 @@ def source_diversity(events: list[NewsEvent]) -> dict[str, int | float | str | N
         "independent_sources": len(counts),
         "largest_source": largest_source,
         "largest_source_share": round(largest_count / len(events), 4),
+        "primary_source_events": sum(
+            event_governance(event)["verification_status"] == "primary_source" for event in events
+        ),
+        "requires_confirmation_events": sum(
+            bool(event_governance(event)["requires_confirmation"]) for event in events
+        ),
     }

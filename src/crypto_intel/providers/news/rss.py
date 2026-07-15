@@ -9,6 +9,7 @@ from urllib.request import Request, urlopen
 
 from crypto_intel.domain.enums import EventClassification, ImpactDirection
 from crypto_intel.domain.models import NewsEvent
+from crypto_intel.services.source_governance import govern_event
 
 
 DEFAULT_FEEDS = [
@@ -23,8 +24,9 @@ DEFAULT_FEEDS = [
 class RssNewsProvider:
     name = "rss"
 
-    def __init__(self, feeds: list[str] | None = None) -> None:
+    def __init__(self, feeds: list[str] | None = None, source_registry: dict | None = None) -> None:
         self.feeds = feeds or DEFAULT_FEEDS
+        self.source_registry = source_registry or {}
 
     def fetch_events(self) -> list[NewsEvent]:
         events: list[NewsEvent] = []
@@ -49,7 +51,8 @@ class RssNewsProvider:
             summary = html.unescape(_text(item, "description"))[:500]
             event_time = _parse_time(_text(item, "pubDate"))
             events.append(
-                NewsEvent(
+                govern_event(
+                    NewsEvent(
                     title=html.unescape(title),
                     summary=summary,
                     event_time=event_time,
@@ -59,12 +62,14 @@ class RssNewsProvider:
                     impact_direction=ImpactDirection.NEUTRAL,
                     short_term_impact="需與價格、成交量及官方資料交叉驗證。",
                     medium_term_impact="若事件延續，可能改變風險偏好或合規成本。",
-                    confidence=0.65,
+                    confidence=0.95,
                     classification=EventClassification.FACT,
                     evidence=[link],
                     topic=_topic_for(title + " " + summary),
                     importance=0.5,
                     quality_score=75,
+                    ),
+                    self.source_registry,
                 )
             )
         return events
