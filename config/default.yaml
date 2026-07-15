@@ -1,0 +1,28 @@
+app:
+  timezone: Asia/Taipei
+  language: zh-TW
+
+report:
+  top_event_count: 10
+  deep_analysis_interval_days: 3
+  output_formats:
+    - html
+    - pdf
+
+providers:
+  market:
+    primary: coingecko
+    secondary: binance
+  news:
+    enabled: true
+  social:
+    enabled: true
+
+quality:
+  minimum_event_count: 5
+  minimum_provider_success_rate: 0.70
+  max_single_domain_ratio: 0.50
+
+delivery:
+  email_enabled: false
+  upload_github_artifact: true

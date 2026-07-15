@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crypto-intelligence-daily"
+version = "0.1.0"
+description = "Daily BTC and USDT market intelligence report generator."
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [{ name = "Crypto Intelligence Daily" }]
+dependencies = []
+
+[project.optional-dependencies]
+pdf = ["reportlab>=4.0"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+crypto-intel = "crypto_intel.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+crypto_intel = ["templates/*.html"]
+
