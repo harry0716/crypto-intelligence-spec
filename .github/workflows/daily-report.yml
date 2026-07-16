@@ -14,8 +14,6 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
   group: pages
@@ -63,11 +61,3 @@ jobs:
         with:
           branch: gh-pages
           folder: public
-      - uses: actions/configure-pages@v5
-        if: github.event.repository.visibility == 'public'
-      - uses: actions/upload-pages-artifact@v3
-        if: github.event.repository.visibility == 'public'
-        with:
-          path: public/
-      - uses: actions/deploy-pages@v4
-        if: github.event.repository.visibility == 'public'

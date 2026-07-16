@@ -44,16 +44,14 @@ GitHub Pages is a static remote entry point. It can display generated reports,
 PDFs, and JSON payloads, but it cannot run the local Python rapid-assessment
 backend directly.
 
-The workflow publishes the same `public/` directory in two ways:
+The workflow publishes the generated `public/` directory to:
 
 ```text
-GitHub Actions Pages deployment
 gh-pages branch
 ```
 
 If the public URL returns GitHub's default 404 page, open repository Settings >
-Pages and set the source to either `GitHub Actions` or `Deploy from a branch:
-gh-pages / root`.
+Pages and set the source to `Deploy from a branch: gh-pages / root`.
 
 For private repositories, GitHub Pages availability depends on the GitHub plan.
 If the API or Settings page says the current plan does not support Pages, the
