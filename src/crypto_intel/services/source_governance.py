@@ -22,7 +22,7 @@ class SourceProfile:
 
     @property
     def verification_status(self) -> str:
-        if self.source_type == "official_primary":
+        if self.source_type in {"official_primary", "developer_primary"}:
             return "primary_source"
         if self.source_type == "project_primary":
             return "issuer_statement"
@@ -121,6 +121,53 @@ DEFAULT_SOURCE_PROFILES = {
         claim_scope="Use for market-data context and news discovery; material claims require corroboration.",
         requires_confirmation=True,
         conflict_note="Market-data platform owned by Binance; exchange-related or listing-related claims require extra care.",
+    ),
+    "bitcointalk.org": SourceProfile(
+        domain="bitcointalk.org",
+        name="Bitcointalk",
+        source_url="https://bitcointalk.org/",
+        tier="T4",
+        source_type="community_forum",
+        quality_score=42,
+        confidence=0.35,
+        claim_scope="Use only as community signal or early lead; never as confirmation of facts or market impact.",
+        requires_confirmation=True,
+        conflict_note="Open forum with pseudonymous posts; high noise and unverifiable claims are expected.",
+    ),
+    "github.com": SourceProfile(
+        domain="github.com",
+        name="Bitcoin Core GitHub",
+        source_url="https://github.com/bitcoin/bitcoin/releases.atom",
+        tier="T2",
+        source_type="developer_primary",
+        quality_score=86,
+        confidence=0.82,
+        claim_scope="Confirms Bitcoin Core repository releases and code activity only; it does not prove market impact.",
+        conflict_note="Developer primary source; interpret technical changes separately from market narratives.",
+    ),
+    "www.reddit.com": SourceProfile(
+        domain="www.reddit.com",
+        name="Reddit Crypto Communities",
+        source_url="https://www.reddit.com/r/CryptoCurrency/.rss",
+        tier="T4",
+        source_type="community_signal",
+        quality_score=40,
+        confidence=0.32,
+        claim_scope="Use for community attention and sentiment clues only; all claims require independent confirmation.",
+        requires_confirmation=True,
+        conflict_note="User-generated and moderation-dependent content; susceptible to rumor, promotion, and brigading.",
+    ),
+    "nostr.com": SourceProfile(
+        domain="nostr.com",
+        name="Nostr",
+        source_url="https://nostr.com/",
+        tier="T4",
+        source_type="community_protocol",
+        quality_score=38,
+        confidence=0.30,
+        claim_scope="Use as a protocol/community reference point only; individual claims require independent sources.",
+        requires_confirmation=True,
+        conflict_note="Protocol landing page, not a curated news source; event-level evidence should come from specific relays or authors.",
     ),
 }
 

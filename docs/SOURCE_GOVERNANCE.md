@@ -12,8 +12,9 @@ the rapid-assessment workbench.
 | --- | --- | --- | --- |
 | T1 | Official primary source | U.S. SEC, U.S. CFTC | Confirm that authority's own action, release, or statement. It does not automatically prove market impact. |
 | T2 | Project primary source | Chainlink Blog | Confirm the project's own announcement only. It is not independent evidence about the broader market. |
+| T2 | Developer primary source | Bitcoin Core GitHub | Confirm repository releases and code activity only. It does not prove market impact. |
 | T3 | Specialist media and market-data media | CoinDesk, Cointelegraph, The Block, Bitcoin Magazine, CoinMarketCap | Discovery and context. Material claims remain pending until corroborated by a primary source or another independent source. |
-| T4 | Unreviewed source | Any domain outside the registry | Not confirmed evidence. It is shown only as an unverified lead. |
+| T4 | Community signal or unreviewed source | Reddit, Bitcointalk, Nostr, any domain outside the registry | Attention, sentiment, or early leads only. Not confirmed evidence. |
 
 ## Current decisions
 
@@ -28,6 +29,14 @@ the rapid-assessment workbench.
   daily RSS provider. CoinMarketCap is approved in the registry, but no stable
   public RSS endpoint has been confirmed yet; it can be used as a manual or
   future API-backed source.
+- Bitcoin Core GitHub is T2 developer-primary evidence for releases and code
+  activity. The RSS provider collects the repository release Atom feed.
+- Reddit CryptoCurrency and Bitcoin communities are T4 community signals. The
+  RSS provider attempts to collect their public subreddit feeds, but their
+  availability may vary due to rate limits.
+- Bitcointalk and Nostr are approved as manual reference sources. No stable
+  machine-readable feed has been confirmed for the configured source URL, so
+  they are not collected automatically by the RSS provider yet.
 - The registry intentionally makes T3 items `inference` rather than `fact`.
   This prevents a single media item from being written as a confirmed event.
 

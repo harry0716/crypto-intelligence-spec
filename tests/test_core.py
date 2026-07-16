@@ -13,6 +13,7 @@ TEST_TMP = Path(tempfile.gettempdir()) / "crypto-intel-tests"
 TEST_TMP.mkdir(exist_ok=True)
 
 from crypto_intel.config import load_config
+from crypto_intel.providers.news.rss import RssNewsProvider
 from crypto_intel.providers.news.static import StaticNewsProvider
 from crypto_intel.services.analytics import exchange_spread_pct, return_pct, usdt_depeg
 from crypto_intel.services.deduplication import deduplicate_events
@@ -80,6 +81,45 @@ class CoreServiceTests(unittest.TestCase):
         self.assertEqual([profile.name for profile in profiles], ["CoinDesk", "Cointelegraph", "The Block", "Bitcoin Magazine", "CoinMarketCap"])
         self.assertTrue(all(profile.tier == "T3" for profile in profiles))
         self.assertTrue(all(profile.requires_confirmation for profile in profiles))
+
+    def test_social_and_developer_reference_sources_are_approved(self) -> None:
+        profiles = [profile_for_url(url) for url in [
+            "https://bitcointalk.org/",
+            "https://github.com/bitcoin/bitcoin",
+            "https://www.reddit.com/r/CryptoCurrency/",
+            "https://www.reddit.com/r/Bitcoin/",
+            "https://nostr.com/",
+        ]]
+        self.assertEqual([profile.name for profile in profiles], [
+            "Bitcointalk",
+            "Bitcoin Core GitHub",
+            "Reddit Crypto Communities",
+            "Reddit Crypto Communities",
+            "Nostr",
+        ])
+        self.assertEqual(profiles[1].source_type, "developer_primary")
+        self.assertTrue(all(profile.requires_confirmation for profile in [profiles[0], profiles[2], profiles[3], profiles[4]]))
+
+    def test_atom_feed_entries_are_collected(self) -> None:
+        with tempfile.TemporaryDirectory(dir=TEST_TMP) as tmp:
+            feed = Path(tmp) / "feed.atom"
+            feed.write_text(
+                """<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <entry>
+    <title>Bitcoin Core 29.0 released</title>
+    <link href="https://github.com/bitcoin/bitcoin/releases/tag/v29.0"/>
+    <updated>2026-07-16T00:00:00Z</updated>
+    <summary>Release notes for Bitcoin Core.</summary>
+  </entry>
+</feed>
+""",
+                encoding="utf-8",
+            )
+            events = RssNewsProvider(feeds=[feed.as_uri()]).fetch_events()
+        self.assertEqual(len(events), 1)
+        self.assertEqual(events[0].source_name, "Bitcoin Core GitHub")
+        self.assertEqual(events[0].quality_score, 86)
 
 
 if __name__ == "__main__":

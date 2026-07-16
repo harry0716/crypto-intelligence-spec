@@ -20,6 +20,9 @@ DEFAULT_FEEDS = [
     "https://cointelegraph.com/rss",
     "https://www.theblock.co/rss.xml",
     "https://bitcoinmagazine.com/.rss/full/",
+    "https://github.com/bitcoin/bitcoin/releases.atom",
+    "https://www.reddit.com/r/CryptoCurrency/.rss",
+    "https://www.reddit.com/r/Bitcoin/.rss",
 ]
 
 
@@ -46,12 +49,14 @@ class RssNewsProvider:
         root = ET.fromstring(xml)
         source_name = urlparse(feed).netloc or feed
         items = root.findall(".//item")[:20]
+        if not items:
+            items = root.findall(".//{http://www.w3.org/2005/Atom}entry")[:20]
         events: list[NewsEvent] = []
         for item in items:
-            title = _text(item, "title")
-            link = _text(item, "link") or feed
-            summary = html.unescape(_text(item, "description"))[:500]
-            event_time = _parse_time(_text(item, "pubDate"))
+            title = _entry_text(item, "title")
+            link = _entry_link(item) or feed
+            summary = html.unescape(_entry_text(item, "description") or _entry_text(item, "summary") or _entry_text(item, "content"))[:500]
+            event_time = _parse_time(_entry_text(item, "pubDate") or _entry_text(item, "published") or _entry_text(item, "updated"))
             events.append(
                 govern_event(
                     NewsEvent(
@@ -82,10 +87,27 @@ def _text(item: ET.Element, tag: str) -> str:
     return (found.text or "").strip() if found is not None else ""
 
 
+def _entry_text(item: ET.Element, tag: str) -> str:
+    return _text(item, tag) or _text(item, f"{{http://www.w3.org/2005/Atom}}{tag}")
+
+
+def _entry_link(item: ET.Element) -> str:
+    direct = _entry_text(item, "link")
+    if direct:
+        return direct
+    atom_link = item.find("{http://www.w3.org/2005/Atom}link")
+    if atom_link is not None:
+        return (atom_link.attrib.get("href") or "").strip()
+    return ""
+
+
 def _parse_time(value: str) -> datetime:
     if not value:
         return datetime.now(timezone.utc)
-    parsed = parsedate_to_datetime(value)
+    try:
+        parsed = parsedate_to_datetime(value)
+    except ValueError:
+        parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
     if parsed.tzinfo is None:
         return parsed.replace(tzinfo=timezone.utc)
     return parsed.astimezone(timezone.utc)

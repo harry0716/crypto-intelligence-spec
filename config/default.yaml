@@ -40,6 +40,14 @@ source_registry:
     requires_confirmation: true
   coinmarketcap.com:
     requires_confirmation: true
+  bitcointalk.org:
+    requires_confirmation: true
+  github.com:
+    name: Bitcoin Core GitHub
+  www.reddit.com:
+    requires_confirmation: true
+  nostr.com:
+    requires_confirmation: true
 
 delivery:
   email_enabled: false
