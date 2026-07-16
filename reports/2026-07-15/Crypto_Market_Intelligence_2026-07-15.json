@@ -1,0 +1,630 @@
+{
+  "report_date": "2026-07-15",
+  "timezone": "Asia/Taipei",
+  "generated_at": "2026-07-15T15:57:09.441571+08:00",
+  "market": {
+    "btc_usd": {
+      "symbol": "BTC",
+      "quote_currency": "USD",
+      "price": 64536.0,
+      "market_cap": 1294450095079.0,
+      "volume_24h": 31351562836.0,
+      "change_24h_pct": 3.284558689501149,
+      "change_7d_pct": 3.092391068881532,
+      "observed_at": "2026-07-15T07:57:08.742388+00:00",
+      "provider": "coingecko",
+      "source_url": "https://api.coingecko.com/api/v3/coins/markets",
+      "raw": {
+        "bitcoin": {
+          "id": "bitcoin",
+          "symbol": "btc",
+          "name": "Bitcoin",
+          "image": "https://coin-images.coingecko.com/coins/images/1/large/bitcoin.png?1696501400",
+          "current_price": 64536,
+          "market_cap": 1294450095079,
+          "market_cap_rank": 1,
+          "fully_diluted_valuation": 1294450095079,
+          "total_volume": 31351562836,
+          "high_24h": 65104,
+          "low_24h": 62442,
+          "price_change_24h": 2052.31,
+          "price_change_percentage_24h": 3.28456,
+          "market_cap_change_24h": 41285039132,
+          "market_cap_change_percentage_24h": 3.29446,
+          "circulating_supply": 20056584.0,
+          "total_supply": 20056584.0,
+          "max_supply": 21000000.0,
+          "ath": 126080,
+          "ath_change_percentage": -48.81342,
+          "ath_date": "2025-10-06T18:57:42.558Z",
+          "atl": 67.81,
+          "atl_change_percentage": 95073.18146,
+          "atl_date": "2013-07-06T00:00:00.000Z",
+          "roi": null,
+          "last_updated": "2026-07-15T07:56:50.164Z",
+          "price_change_percentage_24h_in_currency": 3.284558689501149,
+          "price_change_percentage_7d_in_currency": 3.092391068881532
+        },
+        "tether": {
+          "id": "tether",
+          "symbol": "usdt",
+          "name": "Tether",
+          "image": "https://coin-images.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+          "current_price": 0.999232,
+          "market_cap": 184215402171,
+          "market_cap_rank": 3,
+          "fully_diluted_valuation": 189678298216,
+          "total_volume": 50535747488,
+          "high_24h": 0.999436,
+          "low_24h": 0.998649,
+          "price_change_24h": 0.00050972,
+          "price_change_percentage_24h": 0.05104,
+          "market_cap_change_24h": 154480951,
+          "market_cap_change_percentage_24h": 0.08393,
+          "circulating_supply": 184351830693.4048,
+          "total_supply": 189818772518.2162,
+          "max_supply": null,
+          "ath": 1.32,
+          "ath_change_percentage": -24.47273,
+          "ath_date": "2018-07-24T00:00:00.000Z",
+          "atl": 0.572521,
+          "atl_change_percentage": 74.54343,
+          "atl_date": "2015-03-02T00:00:00.000Z",
+          "roi": null,
+          "last_updated": "2026-07-15T07:56:50.003Z",
+          "price_change_percentage_24h_in_currency": 0.05103772958435604,
+          "price_change_percentage_7d_in_currency": 0.00674896124534667
+        }
+      },
+      "inferred": false
+    },
+    "btc_twd": {
+      "symbol": "BTC",
+      "quote_currency": "TWD",
+      "price": 2078432.0,
+      "market_cap": 41688843588962.0,
+      "volume_24h": 1009042593596.0,
+      "change_24h_pct": 3.3898163949069597,
+      "change_7d_pct": 3.545367688174718,
+      "observed_at": "2026-07-15T07:57:08.742388+00:00",
+      "provider": "coingecko",
+      "source_url": "https://api.coingecko.com/api/v3/coins/markets",
+      "raw": {
+        "bitcoin": {
+          "id": "bitcoin",
+          "symbol": "btc",
+          "name": "Bitcoin",
+          "image": "https://coin-images.coingecko.com/coins/images/1/large/bitcoin.png?1696501400",
+          "current_price": 2078432,
+          "market_cap": 41688843588962,
+          "market_cap_rank": 1,
+          "fully_diluted_valuation": 41688843588962,
+          "total_volume": 1009042593596,
+          "high_24h": 2094931,
+          "low_24h": 2008785,
+          "price_change_24h": 68145,
+          "price_change_percentage_24h": 3.38982,
+          "market_cap_change_24h": 1370764243967,
+          "market_cap_change_percentage_24h": 3.39987,
+          "circulating_supply": 20056584.0,
+          "total_supply": 20056584.0,
+          "max_supply": 21000000.0,
+          "ath": 3845411,
+          "ath_change_percentage": -45.95033,
+          "ath_date": "2025-10-06T18:57:42.558Z",
+          "atl": 1998.66,
+          "atl_change_percentage": 103891.52103,
+          "atl_date": "2013-07-05T00:00:00.000Z",
+          "roi": null,
+          "last_updated": "2026-07-15T07:56:51.289Z",
+          "price_change_percentage_24h_in_currency": 3.3898163949069597,
+          "price_change_percentage_7d_in_currency": 3.545367688174718
+        },
+        "tether": {
+          "id": "tether",
+          "symbol": "usdt",
+          "name": "Tether",
+          "image": "https://coin-images.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+          "current_price": 32.18,
+          "market_cap": 5932810478337,
+          "market_cap_rank": 3,
+          "fully_diluted_valuation": 6108747596079,
+          "total_volume": 1627545844142,
+          "high_24h": 32.19,
+          "low_24h": 32.08,
+          "price_change_24h": 0.04920715,
+          "price_change_percentage_24h": 0.15314,
+          "market_cap_change_24h": 11018459927,
+          "market_cap_change_percentage_24h": 0.18607,
+          "circulating_supply": 184351830693.4048,
+          "total_supply": 189818772518.2162,
+          "max_supply": null,
+          "ath": 40.46,
+          "ath_change_percentage": -20.49042,
+          "ath_date": "2018-07-24T00:00:00.000Z",
+          "atl": 25.15,
+          "atl_change_percentage": 27.93005,
+          "atl_date": "2021-05-19T13:05:54.960Z",
+          "roi": null,
+          "last_updated": "2026-07-15T07:56:50.003Z",
+          "price_change_percentage_24h_in_currency": 0.1531412238738094,
+          "price_change_percentage_7d_in_currency": 0.4788955184977425
+        }
+      },
+      "inferred": false
+    },
+    "usdt_usd": {
+      "symbol": "USDT",
+      "quote_currency": "USD",
+      "price": 0.999232,
+      "market_cap": 184215402171.0,
+      "volume_24h": 50535747488.0,
+      "change_24h_pct": 0.05103772958435604,
+      "change_7d_pct": 0.00674896124534667,
+      "observed_at": "2026-07-15T07:57:08.742388+00:00",
+      "provider": "coingecko",
+      "source_url": "https://api.coingecko.com/api/v3/coins/markets",
+      "raw": {
+        "bitcoin": {
+          "id": "bitcoin",
+          "symbol": "btc",
+          "name": "Bitcoin",
+          "image": "https://coin-images.coingecko.com/coins/images/1/large/bitcoin.png?1696501400",
+          "current_price": 64536,
+          "market_cap": 1294450095079,
+          "market_cap_rank": 1,
+          "fully_diluted_valuation": 1294450095079,
+          "total_volume": 31351562836,
+          "high_24h": 65104,
+          "low_24h": 62442,
+          "price_change_24h": 2052.31,
+          "price_change_percentage_24h": 3.28456,
+          "market_cap_change_24h": 41285039132,
+          "market_cap_change_percentage_24h": 3.29446,
+          "circulating_supply": 20056584.0,
+          "total_supply": 20056584.0,
+          "max_supply": 21000000.0,
+          "ath": 126080,
+          "ath_change_percentage": -48.81342,
+          "ath_date": "2025-10-06T18:57:42.558Z",
+          "atl": 67.81,
+          "atl_change_percentage": 95073.18146,
+          "atl_date": "2013-07-06T00:00:00.000Z",
+          "roi": null,
+          "last_updated": "2026-07-15T07:56:50.164Z",
+          "price_change_percentage_24h_in_currency": 3.284558689501149,
+          "price_change_percentage_7d_in_currency": 3.092391068881532
+        },
+        "tether": {
+          "id": "tether",
+          "symbol": "usdt",
+          "name": "Tether",
+          "image": "https://coin-images.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+          "current_price": 0.999232,
+          "market_cap": 184215402171,
+          "market_cap_rank": 3,
+          "fully_diluted_valuation": 189678298216,
+          "total_volume": 50535747488,
+          "high_24h": 0.999436,
+          "low_24h": 0.998649,
+          "price_change_24h": 0.00050972,
+          "price_change_percentage_24h": 0.05104,
+          "market_cap_change_24h": 154480951,
+          "market_cap_change_percentage_24h": 0.08393,
+          "circulating_supply": 184351830693.4048,
+          "total_supply": 189818772518.2162,
+          "max_supply": null,
+          "ath": 1.32,
+          "ath_change_percentage": -24.47273,
+          "ath_date": "2018-07-24T00:00:00.000Z",
+          "atl": 0.572521,
+          "atl_change_percentage": 74.54343,
+          "atl_date": "2015-03-02T00:00:00.000Z",
+          "roi": null,
+          "last_updated": "2026-07-15T07:56:50.003Z",
+          "price_change_percentage_24h_in_currency": 0.05103772958435604,
+          "price_change_percentage_7d_in_currency": 0.00674896124534667
+        }
+      },
+      "inferred": false
+    },
+    "btc_dominance": 56.302398340342094,
+    "usdt_depeg": 0.0007679999999999909,
+    "provider_status": "success",
+    "warnings": []
+  },
+  "top_events": [
+    {
+      "title": "CFTC Stays KalshiEX Rule Change and Exercises Emergency Authority to Order Fulfillment of Pending Trades",
+      "summary": "",
+      "event_time": "2026-07-14T14:00:00+00:00",
+      "source_name": "U.S. CFTC",
+      "source_url": "https://www.cftc.gov/PressRoom/PressReleases/9267-26",
+      "affected_assets": [],
+      "impact_direction": "neutral",
+      "short_term_impact": "需與價格、成交量及官方資料交叉驗證。",
+      "medium_term_impact": "若事件延續，可能改變風險偏好或合規成本。",
+      "confidence": 0.9,
+      "classification": "fact",
+      "evidence": [
+        "https://www.cftc.gov/PressRoom/PressReleases/9267-26"
+      ],
+      "topic": "Regulation",
+      "importance": 0.64,
+      "quality_score": 96,
+      "governance": {
+        "tier": "T1",
+        "source_type": "official_primary",
+        "claim_scope": "Only confirms official CFTC actions, releases, and statements.",
+        "verification_status": "primary_source",
+        "requires_confirmation": false,
+        "conflict_note": null
+      }
+    },
+    {
+      "title": "CFTC Approves Final Rule Amending Margin Requirements for Uncleared Swaps",
+      "summary": "",
+      "event_time": "2026-07-13T14:46:20+00:00",
+      "source_name": "U.S. CFTC",
+      "source_url": "https://www.cftc.gov/PressRoom/PressReleases/9266-26",
+      "affected_assets": [],
+      "impact_direction": "neutral",
+      "short_term_impact": "需與價格、成交量及官方資料交叉驗證。",
+      "medium_term_impact": "若事件延續，可能改變風險偏好或合規成本。",
+      "confidence": 0.9,
+      "classification": "fact",
+      "evidence": [
+        "https://www.cftc.gov/PressRoom/PressReleases/9266-26"
+      ],
+      "topic": "Regulation",
+      "importance": 0.64,
+      "quality_score": 96,
+      "governance": {
+        "tier": "T1",
+        "source_type": "official_primary",
+        "claim_scope": "Only confirms official CFTC actions, releases, and statements.",
+        "verification_status": "primary_source",
+        "requires_confirmation": false,
+        "conflict_note": null
+      }
+    },
+    {
+      "title": "Here’s what happened in crypto today",
+      "summary": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg\" alt=\"Here’s what happened in crypto today\" class=\"type:primaryImage\"></p><p>Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.</p>",
+      "event_time": "2026-07-15T05:44:31+00:00",
+      "source_name": "Cointelegraph",
+      "source_url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "affected_assets": [
+        "BTC"
+      ],
+      "impact_direction": "neutral",
+      "short_term_impact": "需與價格、成交量及官方資料交叉驗證。",
+      "medium_term_impact": "若事件延續，可能改變風險偏好或合規成本。",
+      "confidence": 0.55,
+      "classification": "inference",
+      "evidence": [
+        "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+      ],
+      "topic": "Regulation",
+      "importance": 0.5265,
+      "quality_score": 60,
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": null
+      }
+    },
+    {
+      "title": "US freezes $131M in Iran-linked crypto as Middle East tensions rise",
+      "summary": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/tether-mints-usdt-iran.jpg\" alt=\"US freezes $131M in Iran-linked crypto as Middle East tensions rise\" class=\"type:primaryImage\"></p><p>“US Treasury is committed to disrupting and degrading Iran’s illicit financial activities, including its abuse of digital assets,” US Treasury Secretary Scott Bessent said Tuesday. </p>",
+      "event_time": "2026-07-15T03:17:59+00:00",
+      "source_name": "Cointelegraph",
+      "source_url": "https://cointelegraph.com/news/us-freezes-131m-in-iran-linked-crypto-as-middle-east-tensions-rise?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "affected_assets": [
+        "USDT"
+      ],
+      "impact_direction": "neutral",
+      "short_term_impact": "需與價格、成交量及官方資料交叉驗證。",
+      "medium_term_impact": "若事件延續，可能改變風險偏好或合規成本。",
+      "confidence": 0.55,
+      "classification": "inference",
+      "evidence": [
+        "https://cointelegraph.com/news/us-freezes-131m-in-iran-linked-crypto-as-middle-east-tensions-rise?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+      ],
+      "topic": "Regulation",
+      "importance": 0.5265,
+      "quality_score": 60,
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": null
+      }
+    },
+    {
+      "title": "U.S. CFTC moves to stop Kalshi from canceling trades as ordered by Michigan court",
+      "summary": "The federal derivatives regulator, which oversees trading at Kalshi, argued it was inappropriate for Michigan to \"bully\" the firm into reversing trades.",
+      "event_time": "2026-07-14T20:51:05+00:00",
+      "source_name": "CoinDesk",
+      "source_url": "https://www.coindesk.com/policy/2026/07/14/u-s-cftc-moves-to-stop-kalshi-from-canceling-trades-as-ordered-by-michigan-court",
+      "affected_assets": [],
+      "impact_direction": "neutral",
+      "short_term_impact": "需與價格、成交量及官方資料交叉驗證。",
+      "medium_term_impact": "若事件延續，可能改變風險偏好或合規成本。",
+      "confidence": 0.58,
+      "classification": "inference",
+      "evidence": [
+        "https://www.coindesk.com/policy/2026/07/14/u-s-cftc-moves-to-stop-kalshi-from-canceling-trades-as-ordered-by-michigan-court"
+      ],
+      "topic": "Regulation",
+      "importance": 0.4368,
+      "quality_score": 64,
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Publisher discloses ownership by Bullish; related coverage requires extra care."
+      }
+    },
+    {
+      "title": "U.S., UK move to align rules for tokenized finance across world's largest financial markets",
+      "summary": "The joint roadmap aims to reduce regulatory friction for tokenized assets while strengthening ties between the world's two largest financial centers.",
+      "event_time": "2026-07-14T16:29:48+00:00",
+      "source_name": "CoinDesk",
+      "source_url": "https://www.coindesk.com/policy/2026/07/14/u-s-uk-move-to-align-rules-for-tokenized-finance-across-world-s-largest-financial-markets",
+      "affected_assets": [],
+      "impact_direction": "neutral",
+      "short_term_impact": "需與價格、成交量及官方資料交叉驗證。",
+      "medium_term_impact": "若事件延續，可能改變風險偏好或合規成本。",
+      "confidence": 0.58,
+      "classification": "inference",
+      "evidence": [
+        "https://www.coindesk.com/policy/2026/07/14/u-s-uk-move-to-align-rules-for-tokenized-finance-across-world-s-largest-financial-markets"
+      ],
+      "topic": "Regulation",
+      "importance": 0.4368,
+      "quality_score": 64,
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Publisher discloses ownership by Bullish; related coverage requires extra care."
+      }
+    }
+  ],
+  "source_updates": [
+    {
+      "source_name": "CoinDesk",
+      "source_url": "https://www.coindesk.com/tech/2026/07/15/visa-mastercard-and-ripple-join-the-standard-letting-ai-agents-pay-in-stablecoins",
+      "event_time": "2026-07-15T06:05:24+00:00",
+      "title": "Visa, Mastercard and Ripple back x402 as agent payments average 32 cents",
+      "original_summary": "Forty companies now govern x402, the protocol Coinbase built and handed away. It settled about $24 million last month across 75 million payments.",
+      "topic": "Market",
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Publisher discloses ownership by Bullish; related coverage requires extra care."
+      },
+      "follow_up": "尋找官方公告或至少另一個獨立來源後，再判斷其影響。",
+      "available": true
+    },
+    {
+      "source_name": "Cointelegraph",
+      "source_url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "event_time": "2026-07-15T05:44:31+00:00",
+      "title": "Here’s what happened in crypto today",
+      "original_summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
+      "topic": "Regulation",
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": null
+      },
+      "follow_up": "尋找官方公告或至少另一個獨立來源後，再判斷其影響。",
+      "available": true
+    },
+    {
+      "source_name": "U.S. CFTC",
+      "source_url": "https://www.cftc.gov/PressRoom/PressReleases/9267-26",
+      "event_time": "2026-07-14T14:00:00+00:00",
+      "title": "CFTC Stays KalshiEX Rule Change and Exercises Emergency Authority to Order Fulfillment of Pending Trades",
+      "original_summary": "",
+      "topic": "Regulation",
+      "governance": {
+        "tier": "T1",
+        "source_type": "official_primary",
+        "claim_scope": "Only confirms official CFTC actions, releases, and statements.",
+        "verification_status": "primary_source",
+        "requires_confirmation": false,
+        "conflict_note": null
+      },
+      "follow_up": "開啟官方原文，確認事件對象、時間與正式行動。",
+      "available": true
+    },
+    {
+      "source_name": "U.S. SEC",
+      "source_url": "https://www.sec.gov/news/pressreleases.rss",
+      "event_time": null,
+      "title": "No eligible update in the configured freshness window.",
+      "original_summary": "",
+      "topic": "Market",
+      "governance": {
+        "tier": "T1",
+        "source_type": "official_primary",
+        "claim_scope": "Only confirms official SEC actions, releases, and statements.",
+        "verification_status": "primary_source",
+        "requires_confirmation": false,
+        "conflict_note": null
+      },
+      "follow_up": "Check the source feed directly if this source is important to your current question.",
+      "available": false
+    },
+    {
+      "source_name": "Chainlink Blog",
+      "source_url": "https://blog.chain.link/rss/",
+      "event_time": null,
+      "title": "No eligible update in the configured freshness window.",
+      "original_summary": "",
+      "topic": "Market",
+      "governance": {
+        "tier": "T2",
+        "source_type": "project_primary",
+        "claim_scope": "Only confirms Chainlink's own announcements and stated positions.",
+        "verification_status": "issuer_statement",
+        "requires_confirmation": false,
+        "conflict_note": "Project-operated source; not independent market evidence."
+      },
+      "follow_up": "Check the source feed directly if this source is important to your current question.",
+      "available": false
+    }
+  ],
+  "beginner_brief": {
+    "headline": "BTC 24 小時 +3.28%；本次納入 6 則事件，其中 4 則尚待交叉確認。",
+    "takeaways": [
+      "BTC/USD 64,536.00，24 小時 +3.28%。 USDT/USD 0.9992，偏離 1 USD 0.077%。 這是行情讀值，不是預測。",
+      "本日有 2 則官方一手資訊；媒體報導不作為單一事實依據。",
+      "請先從「來源雷達」開啟原文，再決定是否需要繼續追蹤。"
+    ]
+  },
+  "market_reading": "BTC/USD 64,536.00，24 小時 +3.28%。 USDT/USD 0.9992，偏離 1 USD 0.077%。 這是行情讀值，不是預測。",
+  "learning_corner": [
+    {
+      "term": "一手來源",
+      "explanation": "事件當事方的正式公告，例如監管機關的新聞稿。"
+    },
+    {
+      "term": "交叉確認",
+      "explanation": "重大消息需要官方說明或其他獨立來源支持，不只看單一媒體。"
+    },
+    {
+      "term": "USDT 脫錨",
+      "explanation": "USDT 價格偏離 1 USD 的程度；偏離變大時，需更密切觀察流動性。"
+    }
+  ],
+  "risks": [
+    "4 則重點事件為媒體資訊，不應作為單一交易依據。"
+  ],
+  "watchlist_24_72h": [
+    "追蹤 監管 是否出現官方公告、數據驗證或獨立交叉確認。"
+  ],
+  "deep_analysis": null,
+  "sources": [
+    {
+      "source_name": "CoinDesk",
+      "source_url": "https://www.coindesk.com/tech/2026/07/15/visa-mastercard-and-ripple-join-the-standard-letting-ai-agents-pay-in-stablecoins",
+      "event_time": "2026-07-15T06:05:24+00:00",
+      "title": "Visa, Mastercard and Ripple back x402 as agent payments average 32 cents",
+      "original_summary": "Forty companies now govern x402, the protocol Coinbase built and handed away. It settled about $24 million last month across 75 million payments.",
+      "topic": "Market",
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Publisher discloses ownership by Bullish; related coverage requires extra care."
+      },
+      "follow_up": "尋找官方公告或至少另一個獨立來源後，再判斷其影響。",
+      "available": true
+    },
+    {
+      "source_name": "Cointelegraph",
+      "source_url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "event_time": "2026-07-15T05:44:31+00:00",
+      "title": "Here’s what happened in crypto today",
+      "original_summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
+      "topic": "Regulation",
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": null
+      },
+      "follow_up": "尋找官方公告或至少另一個獨立來源後，再判斷其影響。",
+      "available": true
+    },
+    {
+      "source_name": "U.S. CFTC",
+      "source_url": "https://www.cftc.gov/PressRoom/PressReleases/9267-26",
+      "event_time": "2026-07-14T14:00:00+00:00",
+      "title": "CFTC Stays KalshiEX Rule Change and Exercises Emergency Authority to Order Fulfillment of Pending Trades",
+      "original_summary": "",
+      "topic": "Regulation",
+      "governance": {
+        "tier": "T1",
+        "source_type": "official_primary",
+        "claim_scope": "Only confirms official CFTC actions, releases, and statements.",
+        "verification_status": "primary_source",
+        "requires_confirmation": false,
+        "conflict_note": null
+      },
+      "follow_up": "開啟官方原文，確認事件對象、時間與正式行動。",
+      "available": true
+    },
+    {
+      "source_name": "U.S. SEC",
+      "source_url": "https://www.sec.gov/news/pressreleases.rss",
+      "event_time": null,
+      "title": "No eligible update in the configured freshness window.",
+      "original_summary": "",
+      "topic": "Market",
+      "governance": {
+        "tier": "T1",
+        "source_type": "official_primary",
+        "claim_scope": "Only confirms official SEC actions, releases, and statements.",
+        "verification_status": "primary_source",
+        "requires_confirmation": false,
+        "conflict_note": null
+      },
+      "follow_up": "Check the source feed directly if this source is important to your current question.",
+      "available": false
+    },
+    {
+      "source_name": "Chainlink Blog",
+      "source_url": "https://blog.chain.link/rss/",
+      "event_time": null,
+      "title": "No eligible update in the configured freshness window.",
+      "original_summary": "",
+      "topic": "Market",
+      "governance": {
+        "tier": "T2",
+        "source_type": "project_primary",
+        "claim_scope": "Only confirms Chainlink's own announcements and stated positions.",
+        "verification_status": "issuer_statement",
+        "requires_confirmation": false,
+        "conflict_note": "Project-operated source; not independent market evidence."
+      },
+      "follow_up": "Check the source feed directly if this source is important to your current question.",
+      "available": false
+    }
+  ],
+  "data_quality": {
+    "event_count": 6,
+    "source_diversity": {
+      "independent_sources": 3,
+      "largest_source": "www.cftc.gov",
+      "largest_source_share": 0.3333,
+      "primary_source_events": 2,
+      "requires_confirmation_events": 4
+    },
+    "warnings": []
+  },
+  "disclaimer": "本報告為資訊整理與教育用途，不構成投資建議。媒體報導、未經官方交叉確認的資訊，均以「待交叉確認」呈現。"
+}
