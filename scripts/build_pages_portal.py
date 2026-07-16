@@ -16,7 +16,14 @@ def main() -> int:
     PUBLIC_DIR.mkdir(parents=True, exist_ok=True)
     (PUBLIC_DIR / ".nojekyll").write_text("", encoding="utf-8")
 
-    reports = _collect_reports()
+    _copy_current_reports()
+    reports = _collect_published_reports()
+    (PUBLIC_DIR / "index.html").write_text(_render_index(reports), encoding="utf-8")
+    return 0
+
+
+def _copy_current_reports() -> None:
+    reports = _collect_artifact_reports()
     for report in reports:
         report_dir = PUBLIC_DIR / "reports" / report["date"]
         report_dir.mkdir(parents=True, exist_ok=True)
@@ -25,36 +32,45 @@ def main() -> int:
             if source.is_file():
                 shutil.copy2(source, report_dir / source.name)
 
-    (PUBLIC_DIR / "index.html").write_text(_render_index(reports), encoding="utf-8")
-    return 0
 
-
-def _collect_reports() -> list[dict]:
+def _collect_artifact_reports() -> list[dict]:
     reports = []
     for json_path in sorted(ARTIFACTS_DIR.glob("Crypto_Market_Intelligence_*.json"), reverse=True):
-        date_part = json_path.stem.removeprefix("Crypto_Market_Intelligence_")
-        html_path = json_path.with_suffix(".html")
-        pdf_path = json_path.with_suffix(".pdf")
-        if not html_path.is_file():
-            continue
-        payload = json.loads(json_path.read_text(encoding="utf-8"))
-        reports.append(
-            {
-                "date": date_part,
-                "title": payload.get("title", f"Crypto Market Intelligence {date_part}"),
-                "generated_at": payload.get("generated_at", ""),
-                "html_path": str(html_path),
-                "pdf_path": str(pdf_path),
-                "json_path": str(json_path),
-                "html_name": html_path.name,
-                "pdf_name": pdf_path.name,
-                "json_name": json_path.name,
-                "has_pdf": pdf_path.is_file(),
-                "source_count": len(payload.get("source_updates", [])),
-                "event_count": len(payload.get("top_events", [])),
-            }
-        )
+        report = _report_from_json(json_path, json_path.stem.removeprefix("Crypto_Market_Intelligence_"))
+        if report is not None:
+            reports.append(report)
     return reports
+
+
+def _collect_published_reports() -> list[dict]:
+    reports = []
+    for json_path in sorted((PUBLIC_DIR / "reports").glob("*/*.json"), reverse=True):
+        report = _report_from_json(json_path, json_path.parent.name)
+        if report is not None:
+            reports.append(report)
+    return reports
+
+
+def _report_from_json(json_path: Path, date_part: str) -> dict | None:
+    html_path = json_path.with_suffix(".html")
+    pdf_path = json_path.with_suffix(".pdf")
+    if not html_path.is_file():
+        return None
+    payload = json.loads(json_path.read_text(encoding="utf-8"))
+    return {
+        "date": date_part,
+        "title": payload.get("title", f"Crypto Market Intelligence {date_part}"),
+        "generated_at": payload.get("generated_at", ""),
+        "html_path": str(html_path),
+        "pdf_path": str(pdf_path),
+        "json_path": str(json_path),
+        "html_name": html_path.name,
+        "pdf_name": pdf_path.name,
+        "json_name": json_path.name,
+        "has_pdf": pdf_path.is_file(),
+        "source_count": len(payload.get("source_updates", [])),
+        "event_count": len(payload.get("top_events", [])),
+    }
 
 
 def _render_index(reports: list[dict]) -> str:

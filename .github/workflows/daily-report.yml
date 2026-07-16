@@ -49,6 +49,13 @@ jobs:
           name: crypto-intelligence-report
           path: artifacts/
           retention-days: 30
+      - name: Restore existing Pages reports
+        run: |
+          git fetch origin gh-pages || true
+          if git rev-parse --verify origin/gh-pages >/dev/null 2>&1; then
+            mkdir -p public
+            git archive origin/gh-pages | tar -x -C public
+          fi
       - name: Build GitHub Pages portal
         run: python scripts/build_pages_portal.py
       - name: Publish portal to gh-pages branch

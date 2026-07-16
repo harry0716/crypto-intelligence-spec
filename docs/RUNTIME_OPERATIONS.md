@@ -61,6 +61,16 @@ workflow still publishes the static portal to the `gh-pages` branch and uploads
 the report artifact, but the public `github.io` URL will remain unavailable
 until the repository is public or the account plan supports private Pages.
 
+Published report history is intentionally kept on the `gh-pages` branch under:
+
+```text
+reports/YYYY-MM-DD/
+```
+
+Before each deployment, the workflow restores the current `gh-pages` contents,
+adds the newly generated report, and rebuilds `index.html`. This keeps the main
+branch clean while preserving online report history.
+
 The `Security` workflow also adapts to repository visibility. Private
 repositories on plans without code scanning support run local security smoke
 checks only. CodeQL is enabled automatically when the repository is public,
