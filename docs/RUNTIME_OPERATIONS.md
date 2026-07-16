@@ -32,6 +32,18 @@ data/crypto_intelligence.db
 GitHub Actions also uploads `artifacts/` as a workflow artifact with the retention
 period defined in `.github/workflows/daily-report.yml`.
 
+The same workflow also builds a GitHub Pages portal from the generated report:
+
+```text
+public/
+public/index.html
+public/reports/YYYY-MM-DD/
+```
+
+GitHub Pages is a static remote entry point. It can display generated reports,
+PDFs, and JSON payloads, but it cannot run the local Python rapid-assessment
+backend directly.
+
 ## Local Workbench
 
 The manual intelligence workbench listens on:

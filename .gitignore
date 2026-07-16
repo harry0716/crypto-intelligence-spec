@@ -11,3 +11,4 @@ data/*.sqlite
 artifacts/*
 !artifacts/.gitkeep
 logs/
+public/
