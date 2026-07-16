@@ -12,7 +12,7 @@ the rapid-assessment workbench.
 | --- | --- | --- | --- |
 | T1 | Official primary source | U.S. SEC, U.S. CFTC | Confirm that authority's own action, release, or statement. It does not automatically prove market impact. |
 | T2 | Project primary source | Chainlink Blog | Confirm the project's own announcement only. It is not independent evidence about the broader market. |
-| T3 | Specialist media | CoinDesk, Cointelegraph | Discovery and context. Material claims remain pending until corroborated by a primary source or another independent source. |
+| T3 | Specialist media and market-data media | CoinDesk, Cointelegraph, The Block, Bitcoin Magazine, CoinMarketCap | Discovery and context. Material claims remain pending until corroborated by a primary source or another independent source. |
 | T4 | Unreviewed source | Any domain outside the registry | Not confirmed evidence. It is shown only as an unverified lead. |
 
 ## Current decisions
@@ -20,9 +20,14 @@ the rapid-assessment workbench.
 - SEC and CFTC are T1 because their releases are first-party records of their
   own official actions.
 - Chainlink Blog is T2 because it is operated by the project it describes.
-- CoinDesk and Cointelegraph are T3. They provide useful specialist coverage,
-  but are not authoritative proof by themselves. CoinDesk's publisher
-  disclosures are surfaced as a conflict note in the report.
+- CoinDesk, Cointelegraph, The Block, Bitcoin Magazine, and CoinMarketCap are
+  T3. They provide useful specialist coverage or market-data context, but are
+  not authoritative proof by themselves. Ownership, editorial focus, and platform
+  conflicts are surfaced as conflict notes where relevant.
+- The Block and Bitcoin Magazine have active RSS feeds and are collected by the
+  daily RSS provider. CoinMarketCap is approved in the registry, but no stable
+  public RSS endpoint has been confirmed yet; it can be used as a manual or
+  future API-backed source.
 - The registry intentionally makes T3 items `inference` rather than `fact`.
   This prevents a single media item from being written as a confirmed event.
 

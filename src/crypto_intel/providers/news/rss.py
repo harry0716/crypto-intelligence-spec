@@ -18,6 +18,8 @@ DEFAULT_FEEDS = [
     "https://blog.chain.link/rss/",
     "https://www.coindesk.com/arc/outboundfeeds/rss/",
     "https://cointelegraph.com/rss",
+    "https://www.theblock.co/rss.xml",
+    "https://bitcoinmagazine.com/.rss/full/",
 ]
 
 

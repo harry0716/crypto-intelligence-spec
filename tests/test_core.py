@@ -19,7 +19,7 @@ from crypto_intel.services.deduplication import deduplicate_events
 from crypto_intel.services.deep_analysis import should_run_deep_analysis
 from crypto_intel.services.normalization import normalize_symbol
 from crypto_intel.services.ranking import rank_events, select_diverse_events
-from crypto_intel.services.source_governance import event_governance, govern_event
+from crypto_intel.services.source_governance import event_governance, govern_event, profile_for_url
 
 
 class CoreServiceTests(unittest.TestCase):
@@ -67,6 +67,19 @@ class CoreServiceTests(unittest.TestCase):
         self.assertTrue(event_governance(media)["requires_confirmation"])
         self.assertEqual(event_governance(official)["verification_status"], "primary_source")
         self.assertGreater(official.quality_score, media.quality_score)
+
+    def test_requested_media_sources_are_approved(self) -> None:
+        urls = [
+            "https://www.coindesk.com/",
+            "https://cointelegraph.com/",
+            "https://www.theblock.co/",
+            "https://bitcoinmagazine.com/",
+            "https://coinmarketcap.com/",
+        ]
+        profiles = [profile_for_url(url) for url in urls]
+        self.assertEqual([profile.name for profile in profiles], ["CoinDesk", "Cointelegraph", "The Block", "Bitcoin Magazine", "CoinMarketCap"])
+        self.assertTrue(all(profile.tier == "T3" for profile in profiles))
+        self.assertTrue(all(profile.requires_confirmation for profile in profiles))
 
 
 if __name__ == "__main__":

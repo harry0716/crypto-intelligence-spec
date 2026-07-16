@@ -34,6 +34,12 @@ source_registry:
     requires_confirmation: true
   cointelegraph.com:
     requires_confirmation: true
+  www.theblock.co:
+    requires_confirmation: true
+  bitcoinmagazine.com:
+    requires_confirmation: true
+  coinmarketcap.com:
+    requires_confirmation: true
 
 delivery:
   email_enabled: false
