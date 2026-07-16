@@ -61,6 +61,11 @@ workflow still publishes the static portal to the `gh-pages` branch and uploads
 the report artifact, but the public `github.io` URL will remain unavailable
 until the repository is public or the account plan supports private Pages.
 
+The `Security` workflow also adapts to repository visibility. Private
+repositories on plans without code scanning support run local security smoke
+checks only. CodeQL is enabled automatically when the repository is public,
+because SARIF upload requires GitHub code scanning support.
+
 ## Local Workbench
 
 The manual intelligence workbench listens on:
