@@ -1,4 +1,4 @@
-# Crypto Intelligence Daily — Codex 開發文件組
+# Crypto Intelligence Daily 
 
 本文件組定義一套可部署於 GitHub、由 GitHub Actions 定時執行的「比特幣與 USDT 每日市場情報系統」。
 
