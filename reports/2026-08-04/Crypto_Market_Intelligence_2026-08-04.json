@@ -1,0 +1,1006 @@
+{
+  "report_date": "2026-08-04",
+  "timezone": "Asia/Taipei",
+  "generated_at": "2026-08-04T09:57:28.894500+08:00",
+  "market": {
+    "btc_usd": {
+      "symbol": "BTC",
+      "quote_currency": "USD",
+      "price": 63798.0,
+      "market_cap": 1279986906743.0,
+      "volume_24h": 26131759639.0,
+      "change_24h_pct": -0.3,
+      "change_7d_pct": -0.6,
+      "observed_at": "2026-08-04T01:57:26.797515+00:00",
+      "provider": "coingecko",
+      "source_url": "https://api.coingecko.com/api/v3/coins/markets",
+      "raw": {
+        "bitcoin": {
+          "id": "bitcoin",
+          "symbol": "btc",
+          "name": "Bitcoin",
+          "image": "https://coin-images.coingecko.com/coins/images/1/large/bitcoin.png?1696501400",
+          "current_price": 63798,
+          "market_cap": 1279986906743,
+          "market_cap_rank": 1,
+          "fully_diluted_valuation": 1279986906743,
+          "total_volume": 26131759639,
+          "high_24h": 64008,
+          "low_24h": 62241,
+          "price_change_24h": 721.02,
+          "price_change_percentage_24h": -0.3,
+          "market_cap_change_24h": 14338487630,
+          "market_cap_change_percentage_24h": 1.1329,
+          "circulating_supply": 20065437.0,
+          "total_supply": 20065437.0,
+          "max_supply": 21000000.0,
+          "ath": 126080,
+          "ath_change_percentage": -49.39836,
+          "ath_date": "2025-10-06T10:57:42.000Z",
+          "atl": 67.81,
+          "atl_change_percentage": 93985.58337,
+          "atl_date": "2013-07-05T16:00:00.000Z",
+          "roi": null,
+          "last_updated": "2026-08-04T01:55:20.000Z",
+          "price_change_percentage_24h_in_currency": -0.3,
+          "price_change_percentage_7d_in_currency": -0.6
+        },
+        "tether": {
+          "id": "tether",
+          "symbol": "usdt",
+          "name": "Tether",
+          "image": "https://coin-images.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+          "current_price": 0.999124,
+          "market_cap": 183124079947,
+          "market_cap_rank": 3,
+          "fully_diluted_valuation": 188586200959,
+          "total_volume": 38227815971,
+          "high_24h": 0.999274,
+          "low_24h": 0.998587,
+          "price_change_24h": 9.631e-05,
+          "price_change_percentage_24h": 0.0,
+          "market_cap_change_24h": -110525138.6618042,
+          "market_cap_change_percentage_24h": -0.06032,
+          "circulating_supply": 183285704315.72986,
+          "total_supply": 188752646167.6262,
+          "max_supply": null,
+          "ath": 1.32,
+          "ath_change_percentage": -24.48585,
+          "ath_date": "2018-07-23T16:00:00.000Z",
+          "atl": 0.572521,
+          "atl_change_percentage": 74.51311,
+          "atl_date": "2015-03-01T16:00:00.000Z",
+          "roi": null,
+          "last_updated": "2026-08-04T01:55:20.000Z",
+          "price_change_percentage_24h_in_currency": 0.0,
+          "price_change_percentage_7d_in_currency": 0.0
+        }
+      },
+      "inferred": false
+    },
+    "btc_twd": {
+      "symbol": "BTC",
+      "quote_currency": "TWD",
+      "price": 2066644.0,
+      "market_cap": 41463002426185.0,
+      "volume_24h": 846493981768.0,
+      "change_24h_pct": -0.3,
+      "change_7d_pct": -0.6,
+      "observed_at": "2026-08-04T01:57:26.797515+00:00",
+      "provider": "coingecko",
+      "source_url": "https://api.coingecko.com/api/v3/coins/markets",
+      "raw": {
+        "bitcoin": {
+          "id": "bitcoin",
+          "symbol": "btc",
+          "name": "Bitcoin",
+          "image": "https://coin-images.coingecko.com/coins/images/1/large/bitcoin.png?1696501400",
+          "current_price": 2066644,
+          "market_cap": 41463002426185,
+          "market_cap_rank": 1,
+          "fully_diluted_valuation": 41463002426185,
+          "total_volume": 846493981768,
+          "high_24h": 2073443,
+          "low_24h": 2016193,
+          "price_change_24h": 23356,
+          "price_change_percentage_24h": -0.3,
+          "market_cap_change_24h": 464470960021,
+          "market_cap_change_percentage_24h": 1.1329,
+          "circulating_supply": 20065437.0,
+          "total_supply": 20065437.0,
+          "max_supply": 21000000.0,
+          "ath": 3845411,
+          "ath_change_percentage": -46.25689,
+          "ath_date": "2025-10-06T10:57:42.000Z",
+          "atl": 1998.66,
+          "atl_change_percentage": 103301.70988,
+          "atl_date": "2013-07-04T16:00:00.000Z",
+          "roi": null,
+          "last_updated": "2026-08-04T01:55:20.000Z",
+          "price_change_percentage_24h_in_currency": -0.3,
+          "price_change_percentage_7d_in_currency": -0.6
+        },
+        "tether": {
+          "id": "tether",
+          "symbol": "usdt",
+          "name": "Tether",
+          "image": "https://coin-images.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+          "current_price": 32.36,
+          "market_cap": 5931993625186,
+          "market_cap_rank": 3,
+          "fully_diluted_valuation": 6108929760690,
+          "total_volume": 1238325187535,
+          "high_24h": 32.37,
+          "low_24h": 32.35,
+          "price_change_24h": 0.00311993,
+          "price_change_percentage_24h": 0.0,
+          "market_cap_change_24h": -3580274195.263672,
+          "market_cap_change_percentage_24h": -0.06032,
+          "circulating_supply": 183285704315.72986,
+          "total_supply": 188752646167.6262,
+          "max_supply": null,
+          "ath": 40.46,
+          "ath_change_percentage": -20.01583,
+          "ath_date": "2018-07-23T16:00:00.000Z",
+          "atl": 25.15,
+          "atl_change_percentage": 28.69366,
+          "atl_date": "2021-05-19T05:05:54.000Z",
+          "roi": null,
+          "last_updated": "2026-08-04T01:55:20.000Z",
+          "price_change_percentage_24h_in_currency": 0.0,
+          "price_change_percentage_7d_in_currency": 0.0
+        }
+      },
+      "inferred": false
+    },
+    "usdt_usd": {
+      "symbol": "USDT",
+      "quote_currency": "USD",
+      "price": 0.999124,
+      "market_cap": 183124079947.0,
+      "volume_24h": 38227815971.0,
+      "change_24h_pct": 0.0,
+      "change_7d_pct": 0.0,
+      "observed_at": "2026-08-04T01:57:26.797515+00:00",
+      "provider": "coingecko",
+      "source_url": "https://api.coingecko.com/api/v3/coins/markets",
+      "raw": {
+        "bitcoin": {
+          "id": "bitcoin",
+          "symbol": "btc",
+          "name": "Bitcoin",
+          "image": "https://coin-images.coingecko.com/coins/images/1/large/bitcoin.png?1696501400",
+          "current_price": 63798,
+          "market_cap": 1279986906743,
+          "market_cap_rank": 1,
+          "fully_diluted_valuation": 1279986906743,
+          "total_volume": 26131759639,
+          "high_24h": 64008,
+          "low_24h": 62241,
+          "price_change_24h": 721.02,
+          "price_change_percentage_24h": -0.3,
+          "market_cap_change_24h": 14338487630,
+          "market_cap_change_percentage_24h": 1.1329,
+          "circulating_supply": 20065437.0,
+          "total_supply": 20065437.0,
+          "max_supply": 21000000.0,
+          "ath": 126080,
+          "ath_change_percentage": -49.39836,
+          "ath_date": "2025-10-06T10:57:42.000Z",
+          "atl": 67.81,
+          "atl_change_percentage": 93985.58337,
+          "atl_date": "2013-07-05T16:00:00.000Z",
+          "roi": null,
+          "last_updated": "2026-08-04T01:55:20.000Z",
+          "price_change_percentage_24h_in_currency": -0.3,
+          "price_change_percentage_7d_in_currency": -0.6
+        },
+        "tether": {
+          "id": "tether",
+          "symbol": "usdt",
+          "name": "Tether",
+          "image": "https://coin-images.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+          "current_price": 0.999124,
+          "market_cap": 183124079947,
+          "market_cap_rank": 3,
+          "fully_diluted_valuation": 188586200959,
+          "total_volume": 38227815971,
+          "high_24h": 0.999274,
+          "low_24h": 0.998587,
+          "price_change_24h": 9.631e-05,
+          "price_change_percentage_24h": 0.0,
+          "market_cap_change_24h": -110525138.6618042,
+          "market_cap_change_percentage_24h": -0.06032,
+          "circulating_supply": 183285704315.72986,
+          "total_supply": 188752646167.6262,
+          "max_supply": null,
+          "ath": 1.32,
+          "ath_change_percentage": -24.48585,
+          "ath_date": "2018-07-23T16:00:00.000Z",
+          "atl": 0.572521,
+          "atl_change_percentage": 74.51311,
+          "atl_date": "2015-03-01T16:00:00.000Z",
+          "roi": null,
+          "last_updated": "2026-08-04T01:55:20.000Z",
+          "price_change_percentage_24h_in_currency": 0.0,
+          "price_change_percentage_7d_in_currency": 0.0
+        }
+      },
+      "inferred": false
+    },
+    "btc_dominance": 56.40737033789569,
+    "usdt_depeg": 0.0008759999999999879,
+    "provider_status": "success",
+    "warnings": []
+  },
+  "top_events": [
+    {
+      "title": "Bitcoin, ether decline as Coldcard exploit enters a fifth day",
+      "summary": "Nevertheless, the drop in crypto prices seems restrained given the magnitude of losses in the wallet hack and the erosion of confidence in cold storage.",
+      "event_time": "2026-08-03T10:51:37+00:00",
+      "source_name": "CoinDesk",
+      "source_url": "https://www.coindesk.com/markets/2026/08/03/bitcoin-ether-decline-as-coldcard-exploit-enters-a-fifth-day",
+      "affected_assets": [
+        "BTC"
+      ],
+      "impact_direction": "neutral",
+      "short_term_impact": "需與價格、成交量及官方資料交叉驗證。",
+      "medium_term_impact": "若事件延續，可能改變風險偏好或合規成本。",
+      "confidence": 0.58,
+      "classification": "inference",
+      "evidence": [
+        "https://www.coindesk.com/markets/2026/08/03/bitcoin-ether-decline-as-coldcard-exploit-enters-a-fifth-day"
+      ],
+      "topic": "Security",
+      "importance": 0.5327,
+      "quality_score": 64,
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Publisher discloses ownership by Bullish; related coverage requires extra care."
+      }
+    },
+    {
+      "title": "Jameson Lopp says Coldcard exploit exposes limits of Bitcoin’s ‘don’t trust, verify’ mantra",
+      "summary": "<p>Lopp said AI is reshaping wallet security by helping attackers uncover bugs and developers audit code faster.</p>",
+      "event_time": "2026-08-03T16:59:42+00:00",
+      "source_name": "The Block",
+      "source_url": "https://www.theblock.co/post/410446/jameson-lopp-coldcard-exploit-exposes-limits-bitcoins-dont-trust-verify-mantra?utm_source=rss&utm_medium=rss",
+      "affected_assets": [
+        "BTC"
+      ],
+      "impact_direction": "neutral",
+      "short_term_impact": "需與價格、成交量及官方資料交叉驗證。",
+      "medium_term_impact": "若事件延續，可能改變風險偏好或合規成本。",
+      "confidence": 0.57,
+      "classification": "inference",
+      "evidence": [
+        "https://www.theblock.co/post/410446/jameson-lopp-coldcard-exploit-exposes-limits-bitcoins-dont-trust-verify-mantra?utm_source=rss&utm_medium=rss"
+      ],
+      "topic": "Regulation",
+      "importance": 0.5323,
+      "quality_score": 63,
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Crypto specialist media; historical ownership/funding concerns require source cross-checks."
+      }
+    },
+    {
+      "title": "SEC keeps Nasdaq bitcoin options on hold after granting CME review",
+      "summary": "<p>CME is arguing that the contracts are commodity option swaps subject exclusively to the CFTC's oversight rather than the SEC's. </p>",
+      "event_time": "2026-08-02T21:25:36+00:00",
+      "source_name": "The Block",
+      "source_url": "https://www.theblock.co/post/410373/sec-keeps-nasdaq-bitcoin-options-on-hold-after-granting-cme-review?utm_source=rss&utm_medium=rss",
+      "affected_assets": [
+        "BTC"
+      ],
+      "impact_direction": "neutral",
+      "short_term_impact": "需與價格、成交量及官方資料交叉驗證。",
+      "medium_term_impact": "若事件延續，可能改變風險偏好或合規成本。",
+      "confidence": 0.57,
+      "classification": "inference",
+      "evidence": [
+        "https://www.theblock.co/post/410373/sec-keeps-nasdaq-bitcoin-options-on-hold-after-granting-cme-review?utm_source=rss&utm_medium=rss"
+      ],
+      "topic": "Regulation",
+      "importance": 0.5323,
+      "quality_score": 63,
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Crypto specialist media; historical ownership/funding concerns require source cross-checks."
+      }
+    },
+    {
+      "title": "Here’s what happened in crypto today",
+      "summary": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg\" alt=\"Here’s what happened in crypto today\" class=\"type:primaryImage\"></p><p>Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.</p>",
+      "event_time": "2026-08-03T19:52:11+00:00",
+      "source_name": "Cointelegraph",
+      "source_url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "affected_assets": [
+        "BTC"
+      ],
+      "impact_direction": "neutral",
+      "short_term_impact": "需與價格、成交量及官方資料交叉驗證。",
+      "medium_term_impact": "若事件延續，可能改變風險偏好或合規成本。",
+      "confidence": 0.55,
+      "classification": "inference",
+      "evidence": [
+        "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+      ],
+      "topic": "Regulation",
+      "importance": 0.5265,
+      "quality_score": 60,
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": null
+      }
+    },
+    {
+      "title": "Strategy sells 1,638 Bitcoin to fund dividends and STRC repurchases",
+      "summary": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/michael-saylors-big-bet-institutional-investments-role-2.jpg\" alt=\"Strategy sells 1,638 Bitcoin to fund dividends and STRC repurchases\" class=\"type:primaryImage\"></p><p>Michael Saylor’s Strategy sold 1,638 Bitcoin in its second-largest sale of the year to fund dividend payments and repurchase its preferred STRC stock.</p>",
+      "event_time": "2026-08-03T12:27:07+00:00",
+      "source_name": "Cointelegraph",
+      "source_url": "https://cointelegraph.com/news/strategy-sells-bitcoin-dividend-strc?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "affected_assets": [
+        "BTC"
+      ],
+      "impact_direction": "neutral",
+      "short_term_impact": "需與價格、成交量及官方資料交叉驗證。",
+      "medium_term_impact": "若事件延續，可能改變風險偏好或合規成本。",
+      "confidence": 0.55,
+      "classification": "inference",
+      "evidence": [
+        "https://cointelegraph.com/news/strategy-sells-bitcoin-dividend-strc?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+      ],
+      "topic": "Regulation",
+      "importance": 0.5265,
+      "quality_score": 60,
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": null
+      }
+    },
+    {
+      "title": "Coldcard Bitcoin Theft Continues, Now Estimated Over $114 Million In Total Stolen",
+      "summary": "<p><a rel=\"nofollow\" href=\"https://bitcoinmagazine.com\">Bitcoin Magazine</a><br />\n<img src=\"https://bitcoinmagazine.com/wp-content/uploads/2026/08/Coldcard-Bitcoin-Theft-Continues.jpg\" style=\"display: block; margin: 1em auto\"><br />\n<a rel=\"nofollow\" href=\"https://bitcoinmagazine.com/news/coldcard-bitcoin-theft-continues\">Coldcard Bitcoin Theft Continues, Now Estimated Over $114 Million In Total Stolen</a></p>\n<p>Bitcoin wallets continue to be drained in the ongoing hack. </p>\n<p>This post <a r",
+      "event_time": "2026-08-03T14:05:38+00:00",
+      "source_name": "Bitcoin Magazine",
+      "source_url": "https://bitcoinmagazine.com/news/coldcard-bitcoin-theft-continues",
+      "affected_assets": [
+        "BTC"
+      ],
+      "impact_direction": "neutral",
+      "short_term_impact": "需與價格、成交量及官方資料交叉驗證。",
+      "medium_term_impact": "若事件延續，可能改變風險偏好或合規成本。",
+      "confidence": 0.53,
+      "classification": "inference",
+      "evidence": [
+        "https://bitcoinmagazine.com/news/coldcard-bitcoin-theft-continues"
+      ],
+      "topic": "Security",
+      "importance": 0.521,
+      "quality_score": 58,
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for Bitcoin-focused discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Bitcoin-focused editorial source; broader market claims should be checked against independent sources."
+      }
+    },
+    {
+      "title": "The Story Behind the Hack: The Fall of the Bitcoin Citadel and the $88 Million Coldcard Catastrophe. How a silent entropy bug, an open-source licensing war, and AI-driven code analysis shattered the illusion of flawless self-custody.",
+      "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/CryptoCurrency/comments/1vehect/the_story_behind_the_hack_the_fall_of_the_bitcoin/\"> <img src=\"https://external-preview.redd.it/FFdYoEUuaf1msmXhvTNgzWjcvFuZIeDwXcmwSPUV140.jpeg?width=640&crop=smart&auto=webp&s=8909d0f46496bd784e910a2c0b32a679d741cf09\" alt=\"The Story Behind the Hack: The Fall of the Bitcoin Citadel and the $88 Million Coldcard Catastrophe. How a silent entropy bug, an open-source licensing war, and AI-driven code analysis shatter",
+      "event_time": "2026-08-03T15:55:29+00:00",
+      "source_name": "Reddit Crypto Communities",
+      "source_url": "https://www.reddit.com/r/CryptoCurrency/comments/1vehect/the_story_behind_the_hack_the_fall_of_the_bitcoin/",
+      "affected_assets": [
+        "BTC"
+      ],
+      "impact_direction": "neutral",
+      "short_term_impact": "需與價格、成交量及官方資料交叉驗證。",
+      "medium_term_impact": "若事件延續，可能改變風險偏好或合規成本。",
+      "confidence": 0.32,
+      "classification": "inference",
+      "evidence": [
+        "https://www.reddit.com/r/CryptoCurrency/comments/1vehect/the_story_behind_the_hack_the_fall_of_the_bitcoin/"
+      ],
+      "topic": "Security",
+      "importance": 0.4859,
+      "quality_score": 40,
+      "governance": {
+        "tier": "T4",
+        "source_type": "community_signal",
+        "claim_scope": "Use for community attention and sentiment clues only; all claims require independent confirmation.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "User-generated and moderation-dependent content; susceptible to rumor, promotion, and brigading."
+      }
+    },
+    {
+      "title": "U.S. FBI intelligence agent arrested in connection with theft of $1 million in crypto",
+      "summary": "The agent, who had \"top secret\" clearance and worked in FBI headquarters, was accused of taking crypto from wallets the agency had investigated.",
+      "event_time": "2026-08-03T22:17:59+00:00",
+      "source_name": "CoinDesk",
+      "source_url": "https://www.coindesk.com/policy/2026/08/03/u-s-fbi-intelligence-agent-arrested-in-connection-with-theft-of-usd1-million-in-crypto",
+      "affected_assets": [],
+      "impact_direction": "neutral",
+      "short_term_impact": "需與價格、成交量及官方資料交叉驗證。",
+      "medium_term_impact": "若事件延續，可能改變風險偏好或合規成本。",
+      "confidence": 0.58,
+      "classification": "inference",
+      "evidence": [
+        "https://www.coindesk.com/policy/2026/08/03/u-s-fbi-intelligence-agent-arrested-in-connection-with-theft-of-usd1-million-in-crypto"
+      ],
+      "topic": "Regulation",
+      "importance": 0.4368,
+      "quality_score": 64,
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Publisher discloses ownership by Bullish; related coverage requires extra care."
+      }
+    },
+    {
+      "title": "‘We’ll Get Through This Bear Market,’ Says CEO of Bitcoin Treasury Company Strategy",
+      "summary": "<p><a rel=\"nofollow\" href=\"https://bitcoinmagazine.com\">Bitcoin Magazine</a><br />\n<img src=\"https://bitcoinmagazine.com/wp-content/uploads/2026/08/Strategy-MSTR-scaled.jpg\" style=\"display: block; margin: 1em auto\"><br />\n<a rel=\"nofollow\" href=\"https://bitcoinmagazine.com/news/strategy-to-get-through-bitcoin-bear-market\">‘We’ll Get Through This Bear Market,’ Says CEO of Bitcoin Treasury Company Strategy </a></p>\n<p>The biggest corporate holder of Bitcoin has again cashed out some of its crypto.",
+      "event_time": "2026-08-03T21:21:15+00:00",
+      "source_name": "Bitcoin Magazine",
+      "source_url": "https://bitcoinmagazine.com/news/strategy-to-get-through-bitcoin-bear-market",
+      "affected_assets": [
+        "BTC"
+      ],
+      "impact_direction": "neutral",
+      "short_term_impact": "需與價格、成交量及官方資料交叉驗證。",
+      "medium_term_impact": "若事件延續，可能改變風險偏好或合規成本。",
+      "confidence": 0.53,
+      "classification": "inference",
+      "evidence": [
+        "https://bitcoinmagazine.com/news/strategy-to-get-through-bitcoin-bear-market"
+      ],
+      "topic": "Market",
+      "importance": 0.3978,
+      "quality_score": 58,
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for Bitcoin-focused discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Bitcoin-focused editorial source; broader market claims should be checked against independent sources."
+      }
+    },
+    {
+      "title": "Rare physical Bitcoin with unredeemed crypto sells for $91,500 at auction",
+      "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/CryptoCurrency/comments/1veof4l/rare_physical_bitcoin_with_unredeemed_crypto/\"> <img src=\"https://external-preview.redd.it/wk1o2QjeFrFcrAUs7dzkPO_kVAxkZfhRSP0vcLwgOuw.jpeg?width=640&crop=smart&auto=webp&s=237216c5caca5bfb04db58bc1d0ffa44a3537ffe\" alt=\"Rare physical Bitcoin with unredeemed crypto sells for $91,500 at auction\" title=\"Rare physical Bitcoin with unredeemed crypto sells for $91,500 at auction\" /> </a> </td><td> <!-- SC_OFF --><div cl",
+      "event_time": "2026-08-03T20:07:55+00:00",
+      "source_name": "Reddit Crypto Communities",
+      "source_url": "https://www.reddit.com/r/CryptoCurrency/comments/1veof4l/rare_physical_bitcoin_with_unredeemed_crypto/",
+      "affected_assets": [
+        "BTC"
+      ],
+      "impact_direction": "neutral",
+      "short_term_impact": "需與價格、成交量及官方資料交叉驗證。",
+      "medium_term_impact": "若事件延續，可能改變風險偏好或合規成本。",
+      "confidence": 0.32,
+      "classification": "inference",
+      "evidence": [
+        "https://www.reddit.com/r/CryptoCurrency/comments/1veof4l/rare_physical_bitcoin_with_unredeemed_crypto/"
+      ],
+      "topic": "Market",
+      "importance": 0.3627,
+      "quality_score": 40,
+      "governance": {
+        "tier": "T4",
+        "source_type": "community_signal",
+        "claim_scope": "Use for community attention and sentiment clues only; all claims require independent confirmation.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "User-generated and moderation-dependent content; susceptible to rumor, promotion, and brigading."
+      }
+    }
+  ],
+  "source_updates": [
+    {
+      "source_name": "Cointelegraph",
+      "source_url": "https://cointelegraph.com/news/caleb-brown-expands-to-uk-betting-on-untapped-crypto-demand?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "event_time": "2026-08-04T00:51:32+00:00",
+      "title": "Caleb & Brown expands to UK, betting on untapped crypto demand",
+      "original_summary": "The boutique brokerage will focus on high-net-worth clients rather than competing with retail crypto exchanges.",
+      "topic": "Market",
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": null
+      },
+      "follow_up": "尋找官方公告或至少另一個獨立來源後，再判斷其影響。",
+      "available": true
+    },
+    {
+      "source_name": "Reddit Crypto Communities",
+      "source_url": "https://www.reddit.com/r/CryptoCurrency/comments/1vevbxr/question_on_bitcoin_related_transaction/",
+      "event_time": "2026-08-04T00:44:58+00:00",
+      "title": "Question on Bitcoin related transaction",
+      "original_summary": "Was doing a sale online with someone for a video game related thing, ended up recieving $1,397 in Bitcoin. It was in my Exodus wallet saying “Recieving…”, so I told the guy I’d wait for the transaction to confirm before giving him what he paid for. He started pressuring me to send the stuff anyway, saying that crypto transactions are permanent, that hes in a rush, etc. I still insisted on waiting so he eventually ended up blocking me. Then the Bitc",
+      "topic": "Market",
+      "governance": {
+        "tier": "T4",
+        "source_type": "community_signal",
+        "claim_scope": "Use for community attention and sentiment clues only; all claims require independent confirmation.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "User-generated and moderation-dependent content; susceptible to rumor, promotion, and brigading."
+      },
+      "follow_up": "尋找官方公告或至少另一個獨立來源後，再判斷其影響。",
+      "available": true
+    },
+    {
+      "source_name": "CoinDesk",
+      "source_url": "https://www.coindesk.com/policy/2026/08/03/u-s-fbi-intelligence-agent-arrested-in-connection-with-theft-of-usd1-million-in-crypto",
+      "event_time": "2026-08-03T22:17:59+00:00",
+      "title": "U.S. FBI intelligence agent arrested in connection with theft of $1 million in crypto",
+      "original_summary": "The agent, who had \"top secret\" clearance and worked in FBI headquarters, was accused of taking crypto from wallets the agency had investigated.",
+      "topic": "Regulation",
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Publisher discloses ownership by Bullish; related coverage requires extra care."
+      },
+      "follow_up": "尋找官方公告或至少另一個獨立來源後，再判斷其影響。",
+      "available": true
+    },
+    {
+      "source_name": "Bitcoin Magazine",
+      "source_url": "https://bitcoinmagazine.com/news/strategy-to-get-through-bitcoin-bear-market",
+      "event_time": "2026-08-03T21:21:15+00:00",
+      "title": "‘We’ll Get Through This Bear Market,’ Says CEO of Bitcoin Treasury Company Strategy",
+      "original_summary": "Bitcoin Magazine ‘We’ll Get Through This Bear Market,’ Says CEO of Bitcoin Treasury Company Strategy The biggest corporate holder of Bitcoin has again cashed out some of its crypto.",
+      "topic": "Market",
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for Bitcoin-focused discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Bitcoin-focused editorial source; broader market claims should be checked against independent sources."
+      },
+      "follow_up": "尋找官方公告或至少另一個獨立來源後，再判斷其影響。",
+      "available": true
+    },
+    {
+      "source_name": "The Block",
+      "source_url": "https://www.theblock.co/post/410507/blockchain-association-counters-sheriffs-associations-claims-pivotal-week-clarity-act?utm_source=rss&utm_medium=rss",
+      "event_time": "2026-08-03T21:13:10+00:00",
+      "title": "Blockchain Association counters National Sheriffs’ group claims as pivotal week for Clarity Act unfolds",
+      "original_summary": "The Blockchain Association said legislation would support law enforcement, countering claims made by the National Sheriffs' Association.",
+      "topic": "Market",
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Crypto specialist media; historical ownership/funding concerns require source cross-checks."
+      },
+      "follow_up": "尋找官方公告或至少另一個獨立來源後，再判斷其影響。",
+      "available": true
+    },
+    {
+      "source_name": "U.S. CFTC",
+      "source_url": "https://www.cftc.gov/RSS/RSSGP/rssgp.xml",
+      "event_time": null,
+      "title": "No eligible update in the configured freshness window.",
+      "original_summary": "",
+      "topic": "Market",
+      "governance": {
+        "tier": "T1",
+        "source_type": "official_primary",
+        "claim_scope": "Only confirms official CFTC actions, releases, and statements.",
+        "verification_status": "primary_source",
+        "requires_confirmation": false,
+        "conflict_note": null
+      },
+      "follow_up": "Check the source feed directly if this source is important to your current question.",
+      "available": false
+    },
+    {
+      "source_name": "U.S. SEC",
+      "source_url": "https://www.sec.gov/news/pressreleases.rss",
+      "event_time": null,
+      "title": "No eligible update in the configured freshness window.",
+      "original_summary": "",
+      "topic": "Market",
+      "governance": {
+        "tier": "T1",
+        "source_type": "official_primary",
+        "claim_scope": "Only confirms official SEC actions, releases, and statements.",
+        "verification_status": "primary_source",
+        "requires_confirmation": false,
+        "conflict_note": null
+      },
+      "follow_up": "Check the source feed directly if this source is important to your current question.",
+      "available": false
+    },
+    {
+      "source_name": "Bitcoin Core GitHub",
+      "source_url": "https://github.com/bitcoin/bitcoin/releases.atom",
+      "event_time": null,
+      "title": "No eligible update in the configured freshness window.",
+      "original_summary": "",
+      "topic": "Market",
+      "governance": {
+        "tier": "T2",
+        "source_type": "developer_primary",
+        "claim_scope": "Confirms Bitcoin Core repository releases and code activity only; it does not prove market impact.",
+        "verification_status": "primary_source",
+        "requires_confirmation": false,
+        "conflict_note": "Developer primary source; interpret technical changes separately from market narratives."
+      },
+      "follow_up": "Check the source feed directly if this source is important to your current question.",
+      "available": false
+    },
+    {
+      "source_name": "Chainlink Blog",
+      "source_url": "https://blog.chain.link/rss/",
+      "event_time": null,
+      "title": "No eligible update in the configured freshness window.",
+      "original_summary": "",
+      "topic": "Market",
+      "governance": {
+        "tier": "T2",
+        "source_type": "project_primary",
+        "claim_scope": "Only confirms Chainlink's own announcements and stated positions.",
+        "verification_status": "issuer_statement",
+        "requires_confirmation": false,
+        "conflict_note": "Project-operated source; not independent market evidence."
+      },
+      "follow_up": "Check the source feed directly if this source is important to your current question.",
+      "available": false
+    },
+    {
+      "source_name": "CoinMarketCap",
+      "source_url": "https://coinmarketcap.com/",
+      "event_time": null,
+      "title": "No eligible update in the configured freshness window.",
+      "original_summary": "",
+      "topic": "Market",
+      "governance": {
+        "tier": "T3",
+        "source_type": "market_data_media",
+        "claim_scope": "Use for market-data context and news discovery; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Market-data platform owned by Binance; exchange-related or listing-related claims require extra care."
+      },
+      "follow_up": "Check the source feed directly if this source is important to your current question.",
+      "available": false
+    },
+    {
+      "source_name": "Bitcointalk",
+      "source_url": "https://bitcointalk.org/",
+      "event_time": null,
+      "title": "No eligible update in the configured freshness window.",
+      "original_summary": "",
+      "topic": "Market",
+      "governance": {
+        "tier": "T4",
+        "source_type": "community_forum",
+        "claim_scope": "Use only as community signal or early lead; never as confirmation of facts or market impact.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Open forum with pseudonymous posts; high noise and unverifiable claims are expected."
+      },
+      "follow_up": "Check the source feed directly if this source is important to your current question.",
+      "available": false
+    },
+    {
+      "source_name": "Nostr",
+      "source_url": "https://nostr.com/",
+      "event_time": null,
+      "title": "No eligible update in the configured freshness window.",
+      "original_summary": "",
+      "topic": "Market",
+      "governance": {
+        "tier": "T4",
+        "source_type": "community_protocol",
+        "claim_scope": "Use as a protocol/community reference point only; individual claims require independent sources.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Protocol landing page, not a curated news source; event-level evidence should come from specific relays or authors."
+      },
+      "follow_up": "Check the source feed directly if this source is important to your current question.",
+      "available": false
+    }
+  ],
+  "beginner_brief": {
+    "headline": "BTC 24 小時 -0.30%；本次納入 10 則事件，其中 10 則尚待交叉確認。",
+    "takeaways": [
+      "BTC/USD 63,798.00，24 小時 -0.30%。 USDT/USD 0.9991，偏離 1 USD 0.088%。 這是行情讀值，不是預測。",
+      "本日有 0 則官方一手資訊；媒體報導不作為單一事實依據。",
+      "請先從「來源雷達」開啟原文，再決定是否需要繼續追蹤。"
+    ]
+  },
+  "market_reading": "BTC/USD 63,798.00，24 小時 -0.30%。 USDT/USD 0.9991，偏離 1 USD 0.088%。 這是行情讀值，不是預測。",
+  "learning_corner": [
+    {
+      "term": "一手來源",
+      "explanation": "事件當事方的正式公告，例如監管機關的新聞稿。"
+    },
+    {
+      "term": "交叉確認",
+      "explanation": "重大消息需要官方說明或其他獨立來源支持，不只看單一媒體。"
+    },
+    {
+      "term": "USDT 脫錨",
+      "explanation": "USDT 價格偏離 1 USD 的程度；偏離變大時，需更密切觀察流動性。"
+    }
+  ],
+  "risks": [
+    "10 則重點事件為媒體資訊，不應作為單一交易依據。"
+  ],
+  "watchlist_24_72h": [
+    "追蹤 資安 是否出現官方公告、數據驗證或獨立交叉確認。",
+    "追蹤 監管 是否出現官方公告、數據驗證或獨立交叉確認。",
+    "追蹤 市場 是否出現官方公告、數據驗證或獨立交叉確認。"
+  ],
+  "deep_analysis": null,
+  "sources": [
+    {
+      "source_name": "Cointelegraph",
+      "source_url": "https://cointelegraph.com/news/caleb-brown-expands-to-uk-betting-on-untapped-crypto-demand?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "event_time": "2026-08-04T00:51:32+00:00",
+      "title": "Caleb & Brown expands to UK, betting on untapped crypto demand",
+      "original_summary": "The boutique brokerage will focus on high-net-worth clients rather than competing with retail crypto exchanges.",
+      "topic": "Market",
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": null
+      },
+      "follow_up": "尋找官方公告或至少另一個獨立來源後，再判斷其影響。",
+      "available": true
+    },
+    {
+      "source_name": "Reddit Crypto Communities",
+      "source_url": "https://www.reddit.com/r/CryptoCurrency/comments/1vevbxr/question_on_bitcoin_related_transaction/",
+      "event_time": "2026-08-04T00:44:58+00:00",
+      "title": "Question on Bitcoin related transaction",
+      "original_summary": "Was doing a sale online with someone for a video game related thing, ended up recieving $1,397 in Bitcoin. It was in my Exodus wallet saying “Recieving…”, so I told the guy I’d wait for the transaction to confirm before giving him what he paid for. He started pressuring me to send the stuff anyway, saying that crypto transactions are permanent, that hes in a rush, etc. I still insisted on waiting so he eventually ended up blocking me. Then the Bitc",
+      "topic": "Market",
+      "governance": {
+        "tier": "T4",
+        "source_type": "community_signal",
+        "claim_scope": "Use for community attention and sentiment clues only; all claims require independent confirmation.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "User-generated and moderation-dependent content; susceptible to rumor, promotion, and brigading."
+      },
+      "follow_up": "尋找官方公告或至少另一個獨立來源後，再判斷其影響。",
+      "available": true
+    },
+    {
+      "source_name": "CoinDesk",
+      "source_url": "https://www.coindesk.com/policy/2026/08/03/u-s-fbi-intelligence-agent-arrested-in-connection-with-theft-of-usd1-million-in-crypto",
+      "event_time": "2026-08-03T22:17:59+00:00",
+      "title": "U.S. FBI intelligence agent arrested in connection with theft of $1 million in crypto",
+      "original_summary": "The agent, who had \"top secret\" clearance and worked in FBI headquarters, was accused of taking crypto from wallets the agency had investigated.",
+      "topic": "Regulation",
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Publisher discloses ownership by Bullish; related coverage requires extra care."
+      },
+      "follow_up": "尋找官方公告或至少另一個獨立來源後，再判斷其影響。",
+      "available": true
+    },
+    {
+      "source_name": "Bitcoin Magazine",
+      "source_url": "https://bitcoinmagazine.com/news/strategy-to-get-through-bitcoin-bear-market",
+      "event_time": "2026-08-03T21:21:15+00:00",
+      "title": "‘We’ll Get Through This Bear Market,’ Says CEO of Bitcoin Treasury Company Strategy",
+      "original_summary": "Bitcoin Magazine ‘We’ll Get Through This Bear Market,’ Says CEO of Bitcoin Treasury Company Strategy The biggest corporate holder of Bitcoin has again cashed out some of its crypto.",
+      "topic": "Market",
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for Bitcoin-focused discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Bitcoin-focused editorial source; broader market claims should be checked against independent sources."
+      },
+      "follow_up": "尋找官方公告或至少另一個獨立來源後，再判斷其影響。",
+      "available": true
+    },
+    {
+      "source_name": "The Block",
+      "source_url": "https://www.theblock.co/post/410507/blockchain-association-counters-sheriffs-associations-claims-pivotal-week-clarity-act?utm_source=rss&utm_medium=rss",
+      "event_time": "2026-08-03T21:13:10+00:00",
+      "title": "Blockchain Association counters National Sheriffs’ group claims as pivotal week for Clarity Act unfolds",
+      "original_summary": "The Blockchain Association said legislation would support law enforcement, countering claims made by the National Sheriffs' Association.",
+      "topic": "Market",
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Crypto specialist media; historical ownership/funding concerns require source cross-checks."
+      },
+      "follow_up": "尋找官方公告或至少另一個獨立來源後，再判斷其影響。",
+      "available": true
+    },
+    {
+      "source_name": "U.S. CFTC",
+      "source_url": "https://www.cftc.gov/RSS/RSSGP/rssgp.xml",
+      "event_time": null,
+      "title": "No eligible update in the configured freshness window.",
+      "original_summary": "",
+      "topic": "Market",
+      "governance": {
+        "tier": "T1",
+        "source_type": "official_primary",
+        "claim_scope": "Only confirms official CFTC actions, releases, and statements.",
+        "verification_status": "primary_source",
+        "requires_confirmation": false,
+        "conflict_note": null
+      },
+      "follow_up": "Check the source feed directly if this source is important to your current question.",
+      "available": false
+    },
+    {
+      "source_name": "U.S. SEC",
+      "source_url": "https://www.sec.gov/news/pressreleases.rss",
+      "event_time": null,
+      "title": "No eligible update in the configured freshness window.",
+      "original_summary": "",
+      "topic": "Market",
+      "governance": {
+        "tier": "T1",
+        "source_type": "official_primary",
+        "claim_scope": "Only confirms official SEC actions, releases, and statements.",
+        "verification_status": "primary_source",
+        "requires_confirmation": false,
+        "conflict_note": null
+      },
+      "follow_up": "Check the source feed directly if this source is important to your current question.",
+      "available": false
+    },
+    {
+      "source_name": "Bitcoin Core GitHub",
+      "source_url": "https://github.com/bitcoin/bitcoin/releases.atom",
+      "event_time": null,
+      "title": "No eligible update in the configured freshness window.",
+      "original_summary": "",
+      "topic": "Market",
+      "governance": {
+        "tier": "T2",
+        "source_type": "developer_primary",
+        "claim_scope": "Confirms Bitcoin Core repository releases and code activity only; it does not prove market impact.",
+        "verification_status": "primary_source",
+        "requires_confirmation": false,
+        "conflict_note": "Developer primary source; interpret technical changes separately from market narratives."
+      },
+      "follow_up": "Check the source feed directly if this source is important to your current question.",
+      "available": false
+    },
+    {
+      "source_name": "Chainlink Blog",
+      "source_url": "https://blog.chain.link/rss/",
+      "event_time": null,
+      "title": "No eligible update in the configured freshness window.",
+      "original_summary": "",
+      "topic": "Market",
+      "governance": {
+        "tier": "T2",
+        "source_type": "project_primary",
+        "claim_scope": "Only confirms Chainlink's own announcements and stated positions.",
+        "verification_status": "issuer_statement",
+        "requires_confirmation": false,
+        "conflict_note": "Project-operated source; not independent market evidence."
+      },
+      "follow_up": "Check the source feed directly if this source is important to your current question.",
+      "available": false
+    },
+    {
+      "source_name": "CoinMarketCap",
+      "source_url": "https://coinmarketcap.com/",
+      "event_time": null,
+      "title": "No eligible update in the configured freshness window.",
+      "original_summary": "",
+      "topic": "Market",
+      "governance": {
+        "tier": "T3",
+        "source_type": "market_data_media",
+        "claim_scope": "Use for market-data context and news discovery; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Market-data platform owned by Binance; exchange-related or listing-related claims require extra care."
+      },
+      "follow_up": "Check the source feed directly if this source is important to your current question.",
+      "available": false
+    },
+    {
+      "source_name": "Bitcointalk",
+      "source_url": "https://bitcointalk.org/",
+      "event_time": null,
+      "title": "No eligible update in the configured freshness window.",
+      "original_summary": "",
+      "topic": "Market",
+      "governance": {
+        "tier": "T4",
+        "source_type": "community_forum",
+        "claim_scope": "Use only as community signal or early lead; never as confirmation of facts or market impact.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Open forum with pseudonymous posts; high noise and unverifiable claims are expected."
+      },
+      "follow_up": "Check the source feed directly if this source is important to your current question.",
+      "available": false
+    },
+    {
+      "source_name": "Nostr",
+      "source_url": "https://nostr.com/",
+      "event_time": null,
+      "title": "No eligible update in the configured freshness window.",
+      "original_summary": "",
+      "topic": "Market",
+      "governance": {
+        "tier": "T4",
+        "source_type": "community_protocol",
+        "claim_scope": "Use as a protocol/community reference point only; individual claims require independent sources.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Protocol landing page, not a curated news source; event-level evidence should come from specific relays or authors."
+      },
+      "follow_up": "Check the source feed directly if this source is important to your current question.",
+      "available": false
+    }
+  ],
+  "data_quality": {
+    "event_count": 10,
+    "source_diversity": {
+      "independent_sources": 5,
+      "largest_source": "www.coindesk.com",
+      "largest_source_share": 0.2,
+      "primary_source_events": 0,
+      "requires_confirmation_events": 10
+    },
+    "warnings": []
+  },
+  "disclaimer": "本報告為資訊整理與教育用途，不構成投資建議。媒體報導、未經官方交叉確認的資訊，均以「待交叉確認」呈現。"
+}
