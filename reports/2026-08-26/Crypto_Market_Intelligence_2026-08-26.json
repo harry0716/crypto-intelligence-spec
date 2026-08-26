@@ -1,0 +1,1003 @@
+{
+  "report_date": "2026-08-26",
+  "timezone": "Asia/Taipei",
+  "generated_at": "2026-08-26T08:56:01.277523+08:00",
+  "market": {
+    "btc_usd": {
+      "symbol": "BTC",
+      "quote_currency": "USD",
+      "price": 78653.0,
+      "market_cap": 1578975532241.0,
+      "volume_24h": 42123353994.0,
+      "change_24h_pct": -1.42696,
+      "change_7d_pct": 21.5,
+      "observed_at": "2026-08-26T00:55:58.908264+00:00",
+      "provider": "coingecko",
+      "source_url": "https://api.coingecko.com/api/v3/coins/markets",
+      "raw": {
+        "bitcoin": {
+          "id": "bitcoin",
+          "symbol": "btc",
+          "name": "Bitcoin",
+          "image": "https://coin-images.coingecko.com/coins/images/1/large/bitcoin.png?1696501400",
+          "current_price": 78653,
+          "market_cap": 1578975532241,
+          "market_cap_rank": 1,
+          "fully_diluted_valuation": 1578975532241,
+          "total_volume": 42123353994,
+          "high_24h": 81160,
+          "low_24h": 77955,
+          "price_change_24h": -929.9861562207807,
+          "price_change_percentage_24h": -1.42696,
+          "market_cap_change_24h": -18627550805.975098,
+          "market_cap_change_percentage_24h": -1.16597,
+          "circulating_supply": 20075184.0,
+          "total_supply": 20075184.0,
+          "max_supply": 21000000.0,
+          "ath": 126080,
+          "ath_change_percentage": -37.6168,
+          "ath_date": "2025-10-06T10:57:42.000Z",
+          "atl": 67.81,
+          "atl_change_percentage": 115891.48806,
+          "atl_date": "2013-07-05T16:00:00.000Z",
+          "roi": null,
+          "last_updated": "2026-08-26T00:53:20.000Z",
+          "price_change_percentage_24h_in_currency": -1.42696,
+          "price_change_percentage_7d_in_currency": 21.5
+        },
+        "tether": {
+          "id": "tether",
+          "symbol": "usdt",
+          "name": "Tether",
+          "image": "https://coin-images.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+          "current_price": 0.999914,
+          "market_cap": 183215901121,
+          "market_cap_rank": 3,
+          "fully_diluted_valuation": 188682408748,
+          "total_volume": 68666528575,
+          "high_24h": 1.0,
+          "low_24h": 0.999657,
+          "price_change_24h": 6.556e-05,
+          "price_change_percentage_24h": 0.00838,
+          "market_cap_change_24h": 13164068,
+          "market_cap_change_percentage_24h": 0.00719,
+          "circulating_supply": 183230580044.15735,
+          "total_supply": 188697525638.1262,
+          "max_supply": null,
+          "ath": 1.32,
+          "ath_change_percentage": -24.42618,
+          "ath_date": "2018-07-23T16:00:00.000Z",
+          "atl": 0.572521,
+          "atl_change_percentage": 74.65099,
+          "atl_date": "2015-03-01T16:00:00.000Z",
+          "roi": null,
+          "last_updated": "2026-08-26T00:53:20.000Z",
+          "price_change_percentage_24h_in_currency": 0.00838,
+          "price_change_percentage_7d_in_currency": 0.0
+        }
+      },
+      "inferred": false
+    },
+    "btc_twd": {
+      "symbol": "BTC",
+      "quote_currency": "TWD",
+      "price": 2505237.0,
+      "market_cap": 50293373913338.0,
+      "volume_24h": 1341708943322.0,
+      "change_24h_pct": -1.36286,
+      "change_7d_pct": 21.5,
+      "observed_at": "2026-08-26T00:55:58.908264+00:00",
+      "provider": "coingecko",
+      "source_url": "https://api.coingecko.com/api/v3/coins/markets",
+      "raw": {
+        "bitcoin": {
+          "id": "bitcoin",
+          "symbol": "btc",
+          "name": "Bitcoin",
+          "image": "https://coin-images.coingecko.com/coins/images/1/large/bitcoin.png?1696501400",
+          "current_price": 2505237,
+          "market_cap": 50293373913338,
+          "market_cap_rank": 1,
+          "fully_diluted_valuation": 50293373913338,
+          "total_volume": 1341708943322,
+          "high_24h": 2585102,
+          "low_24h": 2483005,
+          "price_change_24h": -29621.827909301035,
+          "price_change_percentage_24h": -1.36286,
+          "market_cap_change_24h": -593322922771.9453,
+          "market_cap_change_percentage_24h": -1.16597,
+          "circulating_supply": 20075184.0,
+          "total_supply": 20075184.0,
+          "max_supply": 21000000.0,
+          "ath": 3845411,
+          "ath_change_percentage": -34.85126,
+          "ath_date": "2025-10-06T10:57:42.000Z",
+          "atl": 1998.66,
+          "atl_change_percentage": 125246.12408,
+          "atl_date": "2013-07-04T16:00:00.000Z",
+          "roi": null,
+          "last_updated": "2026-08-26T00:53:20.000Z",
+          "price_change_percentage_24h_in_currency": -1.36286,
+          "price_change_percentage_7d_in_currency": 21.5
+        },
+        "tether": {
+          "id": "tether",
+          "symbol": "usdt",
+          "name": "Tether",
+          "image": "https://coin-images.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+          "current_price": 31.85,
+          "market_cap": 5835774927343,
+          "market_cap_rank": 3,
+          "fully_diluted_valuation": 6009893592572,
+          "total_volume": 2187159538862,
+          "high_24h": 31.85,
+          "low_24h": 31.84,
+          "price_change_24h": 0.00208815,
+          "price_change_percentage_24h": 0.07342,
+          "market_cap_change_24h": 419300604,
+          "market_cap_change_percentage_24h": 0.00719,
+          "circulating_supply": 183230580044.15735,
+          "total_supply": 188697525638.1262,
+          "max_supply": null,
+          "ath": 40.46,
+          "ath_change_percentage": -21.29049,
+          "ath_date": "2018-07-23T16:00:00.000Z",
+          "atl": 25.15,
+          "atl_change_percentage": 26.64274,
+          "atl_date": "2021-05-19T05:05:54.000Z",
+          "roi": null,
+          "last_updated": "2026-08-26T00:53:20.000Z",
+          "price_change_percentage_24h_in_currency": 0.07342,
+          "price_change_percentage_7d_in_currency": 0.0
+        }
+      },
+      "inferred": false
+    },
+    "usdt_usd": {
+      "symbol": "USDT",
+      "quote_currency": "USD",
+      "price": 0.999914,
+      "market_cap": 183215901121.0,
+      "volume_24h": 68666528575.0,
+      "change_24h_pct": 0.00838,
+      "change_7d_pct": 0.0,
+      "observed_at": "2026-08-26T00:55:58.908264+00:00",
+      "provider": "coingecko",
+      "source_url": "https://api.coingecko.com/api/v3/coins/markets",
+      "raw": {
+        "bitcoin": {
+          "id": "bitcoin",
+          "symbol": "btc",
+          "name": "Bitcoin",
+          "image": "https://coin-images.coingecko.com/coins/images/1/large/bitcoin.png?1696501400",
+          "current_price": 78653,
+          "market_cap": 1578975532241,
+          "market_cap_rank": 1,
+          "fully_diluted_valuation": 1578975532241,
+          "total_volume": 42123353994,
+          "high_24h": 81160,
+          "low_24h": 77955,
+          "price_change_24h": -929.9861562207807,
+          "price_change_percentage_24h": -1.42696,
+          "market_cap_change_24h": -18627550805.975098,
+          "market_cap_change_percentage_24h": -1.16597,
+          "circulating_supply": 20075184.0,
+          "total_supply": 20075184.0,
+          "max_supply": 21000000.0,
+          "ath": 126080,
+          "ath_change_percentage": -37.6168,
+          "ath_date": "2025-10-06T10:57:42.000Z",
+          "atl": 67.81,
+          "atl_change_percentage": 115891.48806,
+          "atl_date": "2013-07-05T16:00:00.000Z",
+          "roi": null,
+          "last_updated": "2026-08-26T00:53:20.000Z",
+          "price_change_percentage_24h_in_currency": -1.42696,
+          "price_change_percentage_7d_in_currency": 21.5
+        },
+        "tether": {
+          "id": "tether",
+          "symbol": "usdt",
+          "name": "Tether",
+          "image": "https://coin-images.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+          "current_price": 0.999914,
+          "market_cap": 183215901121,
+          "market_cap_rank": 3,
+          "fully_diluted_valuation": 188682408748,
+          "total_volume": 68666528575,
+          "high_24h": 1.0,
+          "low_24h": 0.999657,
+          "price_change_24h": 6.556e-05,
+          "price_change_percentage_24h": 0.00838,
+          "market_cap_change_24h": 13164068,
+          "market_cap_change_percentage_24h": 0.00719,
+          "circulating_supply": 183230580044.15735,
+          "total_supply": 188697525638.1262,
+          "max_supply": null,
+          "ath": 1.32,
+          "ath_change_percentage": -24.42618,
+          "ath_date": "2018-07-23T16:00:00.000Z",
+          "atl": 0.572521,
+          "atl_change_percentage": 74.65099,
+          "atl_date": "2015-03-01T16:00:00.000Z",
+          "roi": null,
+          "last_updated": "2026-08-26T00:53:20.000Z",
+          "price_change_percentage_24h_in_currency": 0.00838,
+          "price_change_percentage_7d_in_currency": 0.0
+        }
+      },
+      "inferred": false
+    },
+    "btc_dominance": 59.224936050462276,
+    "usdt_depeg": 8.60000000000305e-05,
+    "provider_status": "success",
+    "warnings": []
+  },
+  "top_events": [
+    {
+      "title": "U.S. state banking associations plan to launch their own nationwide blockchain network",
+      "summary": "The \"BankChain Alliance\" is aiming for a 2027 launch, and would foster stablecoins, payments and tokenized deposits inside the banking system's regulatory sphere.",
+      "event_time": "2026-08-25T21:56:57+00:00",
+      "source_name": "CoinDesk",
+      "source_url": "https://www.coindesk.com/policy/2026/08/25/u-s-state-banking-associations-plan-to-launch-their-own-nationwide-blockchain-network",
+      "affected_assets": [
+        "USDT"
+      ],
+      "impact_direction": "neutral",
+      "short_term_impact": "需與價格、成交量及官方資料交叉驗證。",
+      "medium_term_impact": "若事件延續，可能改變風險偏好或合規成本。",
+      "confidence": 0.58,
+      "classification": "inference",
+      "evidence": [
+        "https://www.coindesk.com/policy/2026/08/25/u-s-state-banking-associations-plan-to-launch-their-own-nationwide-blockchain-network"
+      ],
+      "topic": "Regulation",
+      "importance": 0.5343,
+      "quality_score": 64,
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Publisher discloses ownership by Bullish; related coverage requires extra care."
+      }
+    },
+    {
+      "title": "Here’s what happened in crypto today",
+      "summary": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg\" alt=\"Here’s what happened in crypto today\" class=\"type:primaryImage\"></p><p>Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.</p>",
+      "event_time": "2026-08-25T18:34:20+00:00",
+      "source_name": "Cointelegraph",
+      "source_url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "affected_assets": [
+        "BTC"
+      ],
+      "impact_direction": "neutral",
+      "short_term_impact": "需與價格、成交量及官方資料交叉驗證。",
+      "medium_term_impact": "若事件延續，可能改變風險偏好或合規成本。",
+      "confidence": 0.55,
+      "classification": "inference",
+      "evidence": [
+        "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+      ],
+      "topic": "Regulation",
+      "importance": 0.5265,
+      "quality_score": 60,
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": null
+      }
+    },
+    {
+      "title": "Strategy’s $66B Bitcoin machine hinges on capital markets, not BTC price: Report",
+      "summary": "<p style=\"float:right; margin:0 0 10px 15px; width:240px;\"><img src=\"https://s3-images.ctmedia.io/media/article-covers/regulation-office-document-paper-strategyb.jpg\" alt=\"Strategy’s $66B Bitcoin machine hinges on capital markets, not BTC price: Report\" class=\"type:primaryImage\"></p><p>Strategy’s biggest risk may not be a Bitcoin crash, but losing access to the capital markets that help it service $1.76 billion in annual obligations.\n</p>",
+      "event_time": "2026-08-25T16:47:40+00:00",
+      "source_name": "Cointelegraph",
+      "source_url": "https://cointelegraph.com/news/strategy-financing-risk-not-bitcoin-sales?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "affected_assets": [
+        "BTC"
+      ],
+      "impact_direction": "neutral",
+      "short_term_impact": "需與價格、成交量及官方資料交叉驗證。",
+      "medium_term_impact": "若事件延續，可能改變風險偏好或合規成本。",
+      "confidence": 0.55,
+      "classification": "inference",
+      "evidence": [
+        "https://cointelegraph.com/news/strategy-financing-risk-not-bitcoin-sales?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+      ],
+      "topic": "Regulation",
+      "importance": 0.5265,
+      "quality_score": 60,
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": null
+      }
+    },
+    {
+      "title": "Cypher Tank Returns to Lugano, Expanding Its Bet on Bitcoin Founders",
+      "summary": "<p><a rel=\"nofollow\" href=\"https://bitcoinmagazine.com\">Bitcoin Magazine</a><br />\n<img src=\"https://bitcoinmagazine.com/wp-content/uploads/2025/09/plan-b-1.png\" style=\"display: block; margin: 1em auto\"><br />\n<a rel=\"nofollow\" href=\"https://bitcoinmagazine.com/news/cypher-tank-bitcoin-event-returns\">Cypher Tank Returns to Lugano, Expanding Its Bet on Bitcoin Founders</a></p>\n<p>Cypher Tank Returns to Lugano for Second Season following last year's debut. </p>\n<p>This post <a rel=\"nofollow\" href=",
+      "event_time": "2026-08-25T02:00:32+00:00",
+      "source_name": "Bitcoin Magazine",
+      "source_url": "https://bitcoinmagazine.com/news/cypher-tank-bitcoin-event-returns",
+      "affected_assets": [
+        "BTC"
+      ],
+      "impact_direction": "neutral",
+      "short_term_impact": "需與價格、成交量及官方資料交叉驗證。",
+      "medium_term_impact": "若事件延續，可能改變風險偏好或合規成本。",
+      "confidence": 0.53,
+      "classification": "inference",
+      "evidence": [
+        "https://bitcoinmagazine.com/news/cypher-tank-bitcoin-event-returns"
+      ],
+      "topic": "Regulation",
+      "importance": 0.5226,
+      "quality_score": 58,
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for Bitcoin-focused discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Bitcoin-focused editorial source; broader market claims should be checked against independent sources."
+      }
+    },
+    {
+      "title": "What is the best platform to buy Tether gold (XAUt) in the US?",
+      "summary": "<!-- SC_OFF --><div class=\"md\"><p>I want to start migrating my gold ETFs to tokenized gold in the form of xaut, but not sure what the best platform is. Has anyone here got any recommendations? I want the best rate possible but also trustworthiness and security is super important. I don't have a ton of experience with 'crypto' so need it to be as simple as possible. </p> </div><!-- SC_ON -->   submitted by   <a href=\"https://www.reddit.com/user/Hehehe1000\"> /u/Hehehe1000 </a> <br/> <span><a href=",
+      "event_time": "2026-08-25T14:03:43+00:00",
+      "source_name": "Reddit Crypto Communities",
+      "source_url": "https://www.reddit.com/r/CryptoCurrency/comments/1vy0s5b/what_is_the_best_platform_to_buy_tether_gold_xaut/",
+      "affected_assets": [
+        "USDT"
+      ],
+      "impact_direction": "neutral",
+      "short_term_impact": "需與價格、成交量及官方資料交叉驗證。",
+      "medium_term_impact": "若事件延續，可能改變風險偏好或合規成本。",
+      "confidence": 0.32,
+      "classification": "inference",
+      "evidence": [
+        "https://www.reddit.com/r/CryptoCurrency/comments/1vy0s5b/what_is_the_best_platform_to_buy_tether_gold_xaut/"
+      ],
+      "topic": "Regulation",
+      "importance": 0.4875,
+      "quality_score": 40,
+      "governance": {
+        "tier": "T4",
+        "source_type": "community_signal",
+        "claim_scope": "Use for community attention and sentiment clues only; all claims require independent confirmation.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "User-generated and moderation-dependent content; susceptible to rumor, promotion, and brigading."
+      }
+    },
+    {
+      "title": "Update: BTC back at 80k, wife has upgraded me from steak to steak AND dessert",
+      "summary": "<!-- SC_OFF --><div class=\"md\"><p>Follow up to my steak <a href=\"https://www.reddit.com/r/CryptoCurrency/s/8yvBil4TDN\">post</a> from the other day<br/> steak happened. It was unreal. no follow up questions about my magic internet money at any point during dinner, which after 8 months of getting cooked is basically a religious experience<br/> and then btc just kept going. Biggest weekly gain in dollar terms ever apparently.</p> <p>Where we at now:<br/> Checking the app roughly every 40 seconds li",
+      "event_time": "2026-08-24T16:54:21+00:00",
+      "source_name": "Reddit Crypto Communities",
+      "source_url": "https://www.reddit.com/r/CryptoCurrency/comments/1vx8ece/update_btc_back_at_80k_wife_has_upgraded_me_from/",
+      "affected_assets": [
+        "BTC"
+      ],
+      "impact_direction": "neutral",
+      "short_term_impact": "需與價格、成交量及官方資料交叉驗證。",
+      "medium_term_impact": "若事件延續，可能改變風險偏好或合規成本。",
+      "confidence": 0.32,
+      "classification": "inference",
+      "evidence": [
+        "https://www.reddit.com/r/CryptoCurrency/comments/1vx8ece/update_btc_back_at_80k_wife_has_upgraded_me_from/"
+      ],
+      "topic": "Regulation",
+      "importance": 0.4875,
+      "quality_score": 40,
+      "governance": {
+        "tier": "T4",
+        "source_type": "community_signal",
+        "claim_scope": "Use for community attention and sentiment clues only; all claims require independent confirmation.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "User-generated and moderation-dependent content; susceptible to rumor, promotion, and brigading."
+      }
+    },
+    {
+      "title": "Zerohash back for second effort at OCC trust bank charter",
+      "summary": "The crypto infrastructure firm failed to get approval when it first sought a U.S. charter, and the company is quickly back with what it said would be a narrower effort.",
+      "event_time": "2026-08-25T21:38:28+00:00",
+      "source_name": "CoinDesk",
+      "source_url": "https://www.coindesk.com/policy/2026/08/25/zerohash-back-for-second-effort-at-occ-trust-bank-charter",
+      "affected_assets": [],
+      "impact_direction": "neutral",
+      "short_term_impact": "需與價格、成交量及官方資料交叉驗證。",
+      "medium_term_impact": "若事件延續，可能改變風險偏好或合規成本。",
+      "confidence": 0.58,
+      "classification": "inference",
+      "evidence": [
+        "https://www.coindesk.com/policy/2026/08/25/zerohash-back-for-second-effort-at-occ-trust-bank-charter"
+      ],
+      "topic": "Regulation",
+      "importance": 0.4368,
+      "quality_score": 64,
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Publisher discloses ownership by Bullish; related coverage requires extra care."
+      }
+    },
+    {
+      "title": "Hyperliquid Policy Center urges SEC, CFTC to harmonize rules for perpetual contracts",
+      "summary": "The push comes as Hyperliquid's multi-asset perpetuals gain scale and draw scrutiny from traditional exchanges.",
+      "event_time": "2026-08-24T16:18:24+00:00",
+      "source_name": "The Block",
+      "source_url": "https://www.theblock.co/news/regulation/2026-08-24-hyperliquid-policy-center-urges-sec-cftc-harmonize-rules-perpetual-contracts-412601",
+      "affected_assets": [],
+      "impact_direction": "neutral",
+      "short_term_impact": "需與價格、成交量及官方資料交叉驗證。",
+      "medium_term_impact": "若事件延續，可能改變風險偏好或合規成本。",
+      "confidence": 0.57,
+      "classification": "inference",
+      "evidence": [
+        "https://www.theblock.co/news/regulation/2026-08-24-hyperliquid-policy-center-urges-sec-cftc-harmonize-rules-perpetual-contracts-412601"
+      ],
+      "topic": "Regulation",
+      "importance": 0.4349,
+      "quality_score": 63,
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Crypto specialist media; historical ownership/funding concerns require source cross-checks."
+      }
+    },
+    {
+      "title": "Bitcoin holds above $80,000 backed by ETF flows; bull market case ‘early but optimistic,’ analyst says",
+      "summary": "Analysts say it's still too early to tell if this will translate into a bull market, given sticky inflation and geopolitical uncertainty.",
+      "event_time": "2026-08-25T06:46:31+00:00",
+      "source_name": "The Block",
+      "source_url": "https://www.theblock.co/news/markets/2026-08-25-bitcoin-holds-above-80000-412674",
+      "affected_assets": [
+        "BTC"
+      ],
+      "impact_direction": "neutral",
+      "short_term_impact": "需與價格、成交量及官方資料交叉驗證。",
+      "medium_term_impact": "若事件延續，可能改變風險偏好或合規成本。",
+      "confidence": 0.57,
+      "classification": "inference",
+      "evidence": [
+        "https://www.theblock.co/news/markets/2026-08-25-bitcoin-holds-above-80000-412674"
+      ],
+      "topic": "ETF",
+      "importance": 0.4325,
+      "quality_score": 63,
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Crypto specialist media; historical ownership/funding concerns require source cross-checks."
+      }
+    },
+    {
+      "title": "Bitcoin Rally Accelerates, With $80,000 in Sight After ETFs Have Stellar Week",
+      "summary": "<p><a rel=\"nofollow\" href=\"https://bitcoinmagazine.com\">Bitcoin Magazine</a><br />\n<img src=\"https://bitcoinmagazine.com/wp-content/uploads/2026/08/Pics.jpg\" style=\"display: block; margin: 1em auto\"><br />\n<a rel=\"nofollow\" href=\"https://bitcoinmagazine.com/markets/bitcoin-nears-80000-after-etf-action\">Bitcoin Rally Accelerates, With $80,000 in Sight After ETFs Have Stellar Week </a></p>\n<p>Bitcoin’s price surged further on Monday, flirting with $80,000 after U.S. exchange-traded funds had their",
+      "event_time": "2026-08-24T16:18:56+00:00",
+      "source_name": "Bitcoin Magazine",
+      "source_url": "https://bitcoinmagazine.com/markets/bitcoin-nears-80000-after-etf-action",
+      "affected_assets": [
+        "BTC"
+      ],
+      "impact_direction": "neutral",
+      "short_term_impact": "需與價格、成交量及官方資料交叉驗證。",
+      "medium_term_impact": "若事件延續，可能改變風險偏好或合規成本。",
+      "confidence": 0.53,
+      "classification": "inference",
+      "evidence": [
+        "https://bitcoinmagazine.com/markets/bitcoin-nears-80000-after-etf-action"
+      ],
+      "topic": "ETF",
+      "importance": 0.4228,
+      "quality_score": 58,
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for Bitcoin-focused discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Bitcoin-focused editorial source; broader market claims should be checked against independent sources."
+      }
+    }
+  ],
+  "source_updates": [
+    {
+      "source_name": "Reddit Crypto Communities",
+      "source_url": "https://www.reddit.com/r/Bitcoin/comments/1vyg81f/cheapest_way_to_buy_btc_with_eur/",
+      "event_time": "2026-08-25T23:31:26+00:00",
+      "title": "cheapest way to buy BTC with EUR",
+      "original_summary": "Hello there Dear Bitcoiners, i plan to buy btc soon, and i wonder what is the ultimative cheapest way to buy btc from eur to btc? I mean top up from eur bank transfer or anywow, plus lowest fee and comissionspread while buying, i want to max out every euro to satoshi, what the best way? I used to buy on Binance but since its banned i need now new way, any ideas? I think kraken looks pretty expensive by fees, there must be better",
+      "topic": "Market",
+      "governance": {
+        "tier": "T4",
+        "source_type": "community_signal",
+        "claim_scope": "Use for community attention and sentiment clues only; all claims require independent confirmation.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "User-generated and moderation-dependent content; susceptible to rumor, promotion, and brigading."
+      },
+      "follow_up": "尋找官方公告或至少另一個獨立來源後，再判斷其影響。",
+      "available": true
+    },
+    {
+      "source_name": "CoinDesk",
+      "source_url": "https://www.coindesk.com/policy/2026/08/25/u-s-state-banking-associations-plan-to-launch-their-own-nationwide-blockchain-network",
+      "event_time": "2026-08-25T21:56:57+00:00",
+      "title": "U.S. state banking associations plan to launch their own nationwide blockchain network",
+      "original_summary": "The \"BankChain Alliance\" is aiming for a 2027 launch, and would foster stablecoins, payments and tokenized deposits inside the banking system's regulatory sphere.",
+      "topic": "Regulation",
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Publisher discloses ownership by Bullish; related coverage requires extra care."
+      },
+      "follow_up": "尋找官方公告或至少另一個獨立來源後，再判斷其影響。",
+      "available": true
+    },
+    {
+      "source_name": "Bitcoin Magazine",
+      "source_url": "https://bitcoinmagazine.com/news/is-bitcoin-out-of-bear-market",
+      "event_time": "2026-08-25T20:51:18+00:00",
+      "title": "Is Bitcoin Out of Its Bear Market? These Analysts Think So",
+      "original_summary": "Bitcoin Magazine Is Bitcoin Out of Its Bear Market? These Analysts Think So Bitcoin is doing what it has done in previous cycles when it has entered a bull market. Thi",
+      "topic": "Market",
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for Bitcoin-focused discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Bitcoin-focused editorial source; broader market claims should be checked against independent sources."
+      },
+      "follow_up": "尋找官方公告或至少另一個獨立來源後，再判斷其影響。",
+      "available": true
+    },
+    {
+      "source_name": "Cointelegraph",
+      "source_url": "https://cointelegraph.com/news/world-liberty-financial-launches-usd1-natively-on-canton-network?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "event_time": "2026-08-25T20:35:10+00:00",
+      "title": "World Liberty Financial launches USD1 natively on Canton Network",
+      "original_summary": "USD1 is the sixth-largest stablecoin, with a market capitalization of more than $4 billion, according to industry data.",
+      "topic": "Stablecoin",
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": null
+      },
+      "follow_up": "尋找官方公告或至少另一個獨立來源後，再判斷其影響。",
+      "available": true
+    },
+    {
+      "source_name": "The Block",
+      "source_url": "https://www.theblock.co/news/ecosystems/2026-08-25-zro-token-layerzero-atlas-exchange-infrastructure-zero-blockchain-412736",
+      "event_time": "2026-08-25T18:41:50+00:00",
+      "title": "ZRO token surges as LayerZero unveils ATLAS exchange infrastructure built on Zero blockchain",
+      "original_summary": "LayerZero has announced ATLAS, new exchange infrastructure built on its Zero blockchain for trading platforms and financial institutions.",
+      "topic": "Market",
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Crypto specialist media; historical ownership/funding concerns require source cross-checks."
+      },
+      "follow_up": "尋找官方公告或至少另一個獨立來源後，再判斷其影響。",
+      "available": true
+    },
+    {
+      "source_name": "U.S. CFTC",
+      "source_url": "https://www.cftc.gov/RSS/RSSGP/rssgp.xml",
+      "event_time": null,
+      "title": "No eligible update in the configured freshness window.",
+      "original_summary": "",
+      "topic": "Market",
+      "governance": {
+        "tier": "T1",
+        "source_type": "official_primary",
+        "claim_scope": "Only confirms official CFTC actions, releases, and statements.",
+        "verification_status": "primary_source",
+        "requires_confirmation": false,
+        "conflict_note": null
+      },
+      "follow_up": "Check the source feed directly if this source is important to your current question.",
+      "available": false
+    },
+    {
+      "source_name": "U.S. SEC",
+      "source_url": "https://www.sec.gov/news/pressreleases.rss",
+      "event_time": null,
+      "title": "No eligible update in the configured freshness window.",
+      "original_summary": "",
+      "topic": "Market",
+      "governance": {
+        "tier": "T1",
+        "source_type": "official_primary",
+        "claim_scope": "Only confirms official SEC actions, releases, and statements.",
+        "verification_status": "primary_source",
+        "requires_confirmation": false,
+        "conflict_note": null
+      },
+      "follow_up": "Check the source feed directly if this source is important to your current question.",
+      "available": false
+    },
+    {
+      "source_name": "Bitcoin Core GitHub",
+      "source_url": "https://github.com/bitcoin/bitcoin/releases.atom",
+      "event_time": null,
+      "title": "No eligible update in the configured freshness window.",
+      "original_summary": "",
+      "topic": "Market",
+      "governance": {
+        "tier": "T2",
+        "source_type": "developer_primary",
+        "claim_scope": "Confirms Bitcoin Core repository releases and code activity only; it does not prove market impact.",
+        "verification_status": "primary_source",
+        "requires_confirmation": false,
+        "conflict_note": "Developer primary source; interpret technical changes separately from market narratives."
+      },
+      "follow_up": "Check the source feed directly if this source is important to your current question.",
+      "available": false
+    },
+    {
+      "source_name": "Chainlink Blog",
+      "source_url": "https://blog.chain.link/rss/",
+      "event_time": null,
+      "title": "No eligible update in the configured freshness window.",
+      "original_summary": "",
+      "topic": "Market",
+      "governance": {
+        "tier": "T2",
+        "source_type": "project_primary",
+        "claim_scope": "Only confirms Chainlink's own announcements and stated positions.",
+        "verification_status": "issuer_statement",
+        "requires_confirmation": false,
+        "conflict_note": "Project-operated source; not independent market evidence."
+      },
+      "follow_up": "Check the source feed directly if this source is important to your current question.",
+      "available": false
+    },
+    {
+      "source_name": "CoinMarketCap",
+      "source_url": "https://coinmarketcap.com/",
+      "event_time": null,
+      "title": "No eligible update in the configured freshness window.",
+      "original_summary": "",
+      "topic": "Market",
+      "governance": {
+        "tier": "T3",
+        "source_type": "market_data_media",
+        "claim_scope": "Use for market-data context and news discovery; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Market-data platform owned by Binance; exchange-related or listing-related claims require extra care."
+      },
+      "follow_up": "Check the source feed directly if this source is important to your current question.",
+      "available": false
+    },
+    {
+      "source_name": "Bitcointalk",
+      "source_url": "https://bitcointalk.org/",
+      "event_time": null,
+      "title": "No eligible update in the configured freshness window.",
+      "original_summary": "",
+      "topic": "Market",
+      "governance": {
+        "tier": "T4",
+        "source_type": "community_forum",
+        "claim_scope": "Use only as community signal or early lead; never as confirmation of facts or market impact.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Open forum with pseudonymous posts; high noise and unverifiable claims are expected."
+      },
+      "follow_up": "Check the source feed directly if this source is important to your current question.",
+      "available": false
+    },
+    {
+      "source_name": "Nostr",
+      "source_url": "https://nostr.com/",
+      "event_time": null,
+      "title": "No eligible update in the configured freshness window.",
+      "original_summary": "",
+      "topic": "Market",
+      "governance": {
+        "tier": "T4",
+        "source_type": "community_protocol",
+        "claim_scope": "Use as a protocol/community reference point only; individual claims require independent sources.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Protocol landing page, not a curated news source; event-level evidence should come from specific relays or authors."
+      },
+      "follow_up": "Check the source feed directly if this source is important to your current question.",
+      "available": false
+    }
+  ],
+  "beginner_brief": {
+    "headline": "BTC 24 小時 -1.43%；本次納入 10 則事件，其中 10 則尚待交叉確認。",
+    "takeaways": [
+      "BTC/USD 78,653.00，24 小時 -1.43%。 USDT/USD 0.9999，偏離 1 USD 0.009%。 這是行情讀值，不是預測。",
+      "本日有 0 則官方一手資訊；媒體報導不作為單一事實依據。",
+      "請先從「來源雷達」開啟原文，再決定是否需要繼續追蹤。"
+    ]
+  },
+  "market_reading": "BTC/USD 78,653.00，24 小時 -1.43%。 USDT/USD 0.9999，偏離 1 USD 0.009%。 這是行情讀值，不是預測。",
+  "learning_corner": [
+    {
+      "term": "一手來源",
+      "explanation": "事件當事方的正式公告，例如監管機關的新聞稿。"
+    },
+    {
+      "term": "交叉確認",
+      "explanation": "重大消息需要官方說明或其他獨立來源支持，不只看單一媒體。"
+    },
+    {
+      "term": "USDT 脫錨",
+      "explanation": "USDT 價格偏離 1 USD 的程度；偏離變大時，需更密切觀察流動性。"
+    }
+  ],
+  "risks": [
+    "10 則重點事件為媒體資訊，不應作為單一交易依據。"
+  ],
+  "watchlist_24_72h": [
+    "追蹤 監管 是否出現官方公告、數據驗證或獨立交叉確認。",
+    "追蹤 ETF 是否出現官方公告、數據驗證或獨立交叉確認。"
+  ],
+  "deep_analysis": null,
+  "sources": [
+    {
+      "source_name": "Reddit Crypto Communities",
+      "source_url": "https://www.reddit.com/r/Bitcoin/comments/1vyg81f/cheapest_way_to_buy_btc_with_eur/",
+      "event_time": "2026-08-25T23:31:26+00:00",
+      "title": "cheapest way to buy BTC with EUR",
+      "original_summary": "Hello there Dear Bitcoiners, i plan to buy btc soon, and i wonder what is the ultimative cheapest way to buy btc from eur to btc? I mean top up from eur bank transfer or anywow, plus lowest fee and comissionspread while buying, i want to max out every euro to satoshi, what the best way? I used to buy on Binance but since its banned i need now new way, any ideas? I think kraken looks pretty expensive by fees, there must be better",
+      "topic": "Market",
+      "governance": {
+        "tier": "T4",
+        "source_type": "community_signal",
+        "claim_scope": "Use for community attention and sentiment clues only; all claims require independent confirmation.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "User-generated and moderation-dependent content; susceptible to rumor, promotion, and brigading."
+      },
+      "follow_up": "尋找官方公告或至少另一個獨立來源後，再判斷其影響。",
+      "available": true
+    },
+    {
+      "source_name": "CoinDesk",
+      "source_url": "https://www.coindesk.com/policy/2026/08/25/u-s-state-banking-associations-plan-to-launch-their-own-nationwide-blockchain-network",
+      "event_time": "2026-08-25T21:56:57+00:00",
+      "title": "U.S. state banking associations plan to launch their own nationwide blockchain network",
+      "original_summary": "The \"BankChain Alliance\" is aiming for a 2027 launch, and would foster stablecoins, payments and tokenized deposits inside the banking system's regulatory sphere.",
+      "topic": "Regulation",
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Publisher discloses ownership by Bullish; related coverage requires extra care."
+      },
+      "follow_up": "尋找官方公告或至少另一個獨立來源後，再判斷其影響。",
+      "available": true
+    },
+    {
+      "source_name": "Bitcoin Magazine",
+      "source_url": "https://bitcoinmagazine.com/news/is-bitcoin-out-of-bear-market",
+      "event_time": "2026-08-25T20:51:18+00:00",
+      "title": "Is Bitcoin Out of Its Bear Market? These Analysts Think So",
+      "original_summary": "Bitcoin Magazine Is Bitcoin Out of Its Bear Market? These Analysts Think So Bitcoin is doing what it has done in previous cycles when it has entered a bull market. Thi",
+      "topic": "Market",
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for Bitcoin-focused discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Bitcoin-focused editorial source; broader market claims should be checked against independent sources."
+      },
+      "follow_up": "尋找官方公告或至少另一個獨立來源後，再判斷其影響。",
+      "available": true
+    },
+    {
+      "source_name": "Cointelegraph",
+      "source_url": "https://cointelegraph.com/news/world-liberty-financial-launches-usd1-natively-on-canton-network?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "event_time": "2026-08-25T20:35:10+00:00",
+      "title": "World Liberty Financial launches USD1 natively on Canton Network",
+      "original_summary": "USD1 is the sixth-largest stablecoin, with a market capitalization of more than $4 billion, according to industry data.",
+      "topic": "Stablecoin",
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": null
+      },
+      "follow_up": "尋找官方公告或至少另一個獨立來源後，再判斷其影響。",
+      "available": true
+    },
+    {
+      "source_name": "The Block",
+      "source_url": "https://www.theblock.co/news/ecosystems/2026-08-25-zro-token-layerzero-atlas-exchange-infrastructure-zero-blockchain-412736",
+      "event_time": "2026-08-25T18:41:50+00:00",
+      "title": "ZRO token surges as LayerZero unveils ATLAS exchange infrastructure built on Zero blockchain",
+      "original_summary": "LayerZero has announced ATLAS, new exchange infrastructure built on its Zero blockchain for trading platforms and financial institutions.",
+      "topic": "Market",
+      "governance": {
+        "tier": "T3",
+        "source_type": "specialist_media",
+        "claim_scope": "Use for discovery and context; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Crypto specialist media; historical ownership/funding concerns require source cross-checks."
+      },
+      "follow_up": "尋找官方公告或至少另一個獨立來源後，再判斷其影響。",
+      "available": true
+    },
+    {
+      "source_name": "U.S. CFTC",
+      "source_url": "https://www.cftc.gov/RSS/RSSGP/rssgp.xml",
+      "event_time": null,
+      "title": "No eligible update in the configured freshness window.",
+      "original_summary": "",
+      "topic": "Market",
+      "governance": {
+        "tier": "T1",
+        "source_type": "official_primary",
+        "claim_scope": "Only confirms official CFTC actions, releases, and statements.",
+        "verification_status": "primary_source",
+        "requires_confirmation": false,
+        "conflict_note": null
+      },
+      "follow_up": "Check the source feed directly if this source is important to your current question.",
+      "available": false
+    },
+    {
+      "source_name": "U.S. SEC",
+      "source_url": "https://www.sec.gov/news/pressreleases.rss",
+      "event_time": null,
+      "title": "No eligible update in the configured freshness window.",
+      "original_summary": "",
+      "topic": "Market",
+      "governance": {
+        "tier": "T1",
+        "source_type": "official_primary",
+        "claim_scope": "Only confirms official SEC actions, releases, and statements.",
+        "verification_status": "primary_source",
+        "requires_confirmation": false,
+        "conflict_note": null
+      },
+      "follow_up": "Check the source feed directly if this source is important to your current question.",
+      "available": false
+    },
+    {
+      "source_name": "Bitcoin Core GitHub",
+      "source_url": "https://github.com/bitcoin/bitcoin/releases.atom",
+      "event_time": null,
+      "title": "No eligible update in the configured freshness window.",
+      "original_summary": "",
+      "topic": "Market",
+      "governance": {
+        "tier": "T2",
+        "source_type": "developer_primary",
+        "claim_scope": "Confirms Bitcoin Core repository releases and code activity only; it does not prove market impact.",
+        "verification_status": "primary_source",
+        "requires_confirmation": false,
+        "conflict_note": "Developer primary source; interpret technical changes separately from market narratives."
+      },
+      "follow_up": "Check the source feed directly if this source is important to your current question.",
+      "available": false
+    },
+    {
+      "source_name": "Chainlink Blog",
+      "source_url": "https://blog.chain.link/rss/",
+      "event_time": null,
+      "title": "No eligible update in the configured freshness window.",
+      "original_summary": "",
+      "topic": "Market",
+      "governance": {
+        "tier": "T2",
+        "source_type": "project_primary",
+        "claim_scope": "Only confirms Chainlink's own announcements and stated positions.",
+        "verification_status": "issuer_statement",
+        "requires_confirmation": false,
+        "conflict_note": "Project-operated source; not independent market evidence."
+      },
+      "follow_up": "Check the source feed directly if this source is important to your current question.",
+      "available": false
+    },
+    {
+      "source_name": "CoinMarketCap",
+      "source_url": "https://coinmarketcap.com/",
+      "event_time": null,
+      "title": "No eligible update in the configured freshness window.",
+      "original_summary": "",
+      "topic": "Market",
+      "governance": {
+        "tier": "T3",
+        "source_type": "market_data_media",
+        "claim_scope": "Use for market-data context and news discovery; material claims require corroboration.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Market-data platform owned by Binance; exchange-related or listing-related claims require extra care."
+      },
+      "follow_up": "Check the source feed directly if this source is important to your current question.",
+      "available": false
+    },
+    {
+      "source_name": "Bitcointalk",
+      "source_url": "https://bitcointalk.org/",
+      "event_time": null,
+      "title": "No eligible update in the configured freshness window.",
+      "original_summary": "",
+      "topic": "Market",
+      "governance": {
+        "tier": "T4",
+        "source_type": "community_forum",
+        "claim_scope": "Use only as community signal or early lead; never as confirmation of facts or market impact.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Open forum with pseudonymous posts; high noise and unverifiable claims are expected."
+      },
+      "follow_up": "Check the source feed directly if this source is important to your current question.",
+      "available": false
+    },
+    {
+      "source_name": "Nostr",
+      "source_url": "https://nostr.com/",
+      "event_time": null,
+      "title": "No eligible update in the configured freshness window.",
+      "original_summary": "",
+      "topic": "Market",
+      "governance": {
+        "tier": "T4",
+        "source_type": "community_protocol",
+        "claim_scope": "Use as a protocol/community reference point only; individual claims require independent sources.",
+        "verification_status": "requires_confirmation",
+        "requires_confirmation": true,
+        "conflict_note": "Protocol landing page, not a curated news source; event-level evidence should come from specific relays or authors."
+      },
+      "follow_up": "Check the source feed directly if this source is important to your current question.",
+      "available": false
+    }
+  ],
+  "data_quality": {
+    "event_count": 10,
+    "source_diversity": {
+      "independent_sources": 5,
+      "largest_source": "www.coindesk.com",
+      "largest_source_share": 0.2,
+      "primary_source_events": 0,
+      "requires_confirmation_events": 10
+    },
+    "warnings": []
+  },
+  "disclaimer": "本報告為資訊整理與教育用途，不構成投資建議。媒體報導、未經官方交叉確認的資訊，均以「待交叉確認」呈現。"
+}
